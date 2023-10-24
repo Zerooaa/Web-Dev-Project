@@ -3,10 +3,9 @@
     padding: 0px;
 }
 .background{
-    height: 100vh;
     background-image: url(https://github.com/Zerooaa/Web-Dev-Project/blob/main/Images/Website%20Image.jpg?raw=true);
     background-repeat:no-repeat;
     background-attachment:fixed;
-    background-size:100%;
+    background-size: 100%;
     filter: opacity(99%);
 }
