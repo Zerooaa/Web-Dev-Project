@@ -13,3 +13,6 @@
     font-size: 130%;
     line-height: 150%;
 }
+.table, th, td {
+    border: 1px solid black;
+  }
