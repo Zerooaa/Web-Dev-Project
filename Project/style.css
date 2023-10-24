@@ -9,3 +9,7 @@
     background-size: 100%;
     filter: opacity(99%);
 }
+.instructions{
+    font-size: 130%;
+    line-height: 150%;
+}
