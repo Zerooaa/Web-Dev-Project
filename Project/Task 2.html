@@ -19,14 +19,6 @@
     </div> 
     <br>
     <hr style="height:3px;background-color: black;"> 
-    <div class="groupradio">
-        <br>
-        <input type="text" id="result" placeholder="Type your Branch/Campus" required>
-        <br>
-        <input type="radio" id="branch" name="school" required> <b style="font-size: 120%;">BRANCH</b> 
-        <input type="radio" id="campus" name="school" required> <b style="font-size: 120%;">CAMPUS</b> 
-        <br> 
-    </div>
 
     <div class="insTitle";>
         <b>INSTRUCTIONS:</b>
@@ -40,29 +32,54 @@
         <p>4. Go to the Accounting Student Services (of your Branch/Campus) for the assessment and tagging of necessary fee/s.</p>
         <p>5. Pay the assessed fee at the SIS Window in the Branch/Campus Cashier's Office.</p>
         <p>6. Photocopy this form and official receipt and submit copy to Office of the Branch/Campus Registrar (Original Copy), Director's Office (photocopy), and keep a personal copy.</p>
+        <br>
     </div>
 
     <hr style="height:3px;background-color: black;"> 
 
-    <div class="studentName">
+<div class="backgroundx">
+    <form>
         <br>
-        <b>Enter your Name:</b>
         <br>
-        <input type="text" id="studentData" placeholder="Student Name" required>
-    </div>
-    
-    <div class="semGroup">
+        <div class="fill-group">
+            <input type="text" id="result" required>
+            <label for="result">Branch/Campus</label>
+        </div>
+        <div class="fill-group">
+            <input type="text" id="name" required>
+            <label for="name">Student Name</label>
+        </div>
+        <div class="semGroup">
+            <b style="font-size: 150%;">Semester:</b>
+            <br>
+        </div>
         <br>
-        <b>Semester:</b>
+        <div class="container">
+                <label>
+                    <input type="radio" id="1stSem" name="radio">
+                    <span><b>1st Semester</b></span>
+                </label>
+                <br>
+                <label>
+                    <input type="radio" id="2ndSem" name="radio">
+                    <span><b>2nd Semester</b></span>
+                </label>
+                <br>
+                <label>
+                    <input type="radio" id="Summer" name="radio">
+                    <span><b>Summer</b></span>
+                </label>
+        </div>
         <br>
-        <input type="radio" id="1stSem" name="semester" required> <b>1st Semester</b>
         <br>
-        <input type="radio" id="2ndSem" name="semester" required> <b>2nd Semester</b>
-        <br>
-        <input type="radio" id="3rdSem" name="semester" required> <b>3rd Semester</b>
-    </div>
+        <div class="fill-group">
+            <textarea id="message" rows="8" required></textarea>
+            <label for="message">Reason</label>
+        </div>
+        <button type="next">Next</button>
+        
+    </form>
+</div>
 
 </body>
-
-
 </html>
