@@ -18,16 +18,19 @@
 .content{
     text-align: center;
 }
-.instructions{
-    text-indent: 2%;
-    font-size: 130%;
-    line-height: 150%;
-}
 .insTitle{
     padding: 3px 3px;
     text-indent: 2%;
     font-size: 150%;
     font-weight: bold;
+}
+.instructions{
+    text-indent: 2%;
+    font-size: 130%;
+    line-height: 150%;
+}
+.studentName{
+    margin-left: 2%;
 }
 .groupradio{
     text-align: center;
@@ -41,8 +44,6 @@ input[type=text]{
     color: black;
     text-align: center;
 }
-.table{
-    border: 1px solid black;
-    border-collapse: collapse;
-    width: 100%;
+.semGroup{
+    margin-left: 2%;
 }
