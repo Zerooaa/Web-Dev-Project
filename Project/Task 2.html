@@ -8,6 +8,7 @@
 </head>
 <body>
     <div style="text-align: center;">
+        <br>
         <b style="font-size: 90%">REPUBLIC OF THE PHILIPPINES</b>
         <br>
         <b style="font-size: 130%">POLYTECHNIC UNIVERSITY OF THE PHILIPPINES</b>
@@ -15,20 +16,24 @@
         <b>OFFICE OF THE BRANCH/CAMPUS REGISTRAR</b>
         <br>
         <a href="Task 1.html"><img src="https://github.com/Zerooaa/Web-Dev-Project/blob/main/Images/PUP%20LOGO.png?raw=true" height="150" width="150"></a>
+        
     </div> 
+    <br>
     <hr style="height:3px;background-color: black;"> 
-    <div style="text-align: center;">
+    <div class="groupradio">
         <br>
-        <input type="text" name="schoolbranch" required>
+        <input type="text" id="result" placeholder="Type your Branch/Campus" required>
         <br>
-        <b style="font-size: 140%;">BRANCH AND CAMPUS</b>
-
+        <input type="radio" id="branch" name="school" required> <b style="font-size: 140%;">BRANCH</b> 
+        <input type="radio" id="campus" name="school" required> <b style="font-size: 140%;">CAMPUS</b> 
+        <br> 
     </div>
-    <div style="font-size: 140% ";>
+
+    <div class="insTitle";>
         <b>INSTRUCTIONS:</b>
     </div>
+
     <div class="instructions">
-        
         <p>1. Fill-out all blank spaces provided in this form with appropriate information, write <b>N/A</b> if not applicable</p>
         <p>2. Write the details of subject to change in the <b>RELEASED</b> and <b>ACCEPTED</b> section and have it signed by the faculty handling respectively.</p>
         <p>(In case the professor has not yet attended the class, the Branch/Campus Academic Head may sign in lieu of the professor in order to avoid delay in processing of adjustment.)</p>
@@ -37,82 +42,20 @@
         <p>5. Pay the assessed fee at the SIS Window in the Branch/Campus Cashier's Office.</p>
         <p>6. Photocopy this form and official receipt and submit copy to Office of the Branch/Campus Registrar (Original Copy), Director's Office (photocopy), and keep a personal copy.</p>
     </div>
-</body>
 
-<body>
-    <br>
-    <br>
-    <p><u>RELEASED</u></p>
-    <table border="3px" align="center">
-        <colgroup>
-            <col span="3" style="background-color: white;">
-            <col style="background-color: white;">
-            <col style="background-color: white;">
-        </colgroup>
-        <tr>    
-            <th>Code</th>
-            <th>Description</th>
-            <th>Course, Year & Section</th>
-            <th>Day</th>
-            <th>Time</th>
-            <th>Room</th>
-            <th>Units</th>
-            <th>Faculty Signature Over Printed Name and Date</th>
-        </tr>
-    </table>
-    <br>
-    <br>
-    <p><u>ACCEPTED</u></p>
-    <table border="3px">
-        <colgroup>
-            <col span="3">
-        </colgroup>
-        <tr>
-            <th>Code</th>
-            <th>Description</th>
-            <th>Course, Year & Section</th>
-            <th>Day</th>
-            <th>Time</th>
-            <th>Room</th>
-            <th>Units</th>
-            <th>Faculty Signature Over Printed Name and Date</th>
-        </tr>
-    </table>
-</body>
-
-
-<body>
+    <div class="studentName">
+        <br>
+        <input type="text" id="studentData" placeholder="Student Name" required>
+    </div>
     
-    <p><u>RELEASED</u></p>
-    <table border="3px">
-        <tr>
-            <th>Code</th>
-            <th>Description</th>
-            <th>Course, Year & Section</th>
-            <th>Day</th>
-            <th>Time</th>
-            <th>Room</th>
-            <th>Units</th>
-            <th>Faculty Signature Over Printed Name and Date</th>
-        </tr>
-    </table>
+    <div class="semGroup">
+        <br>
+        <input type="radio" id="1stSem" name="semester" required> <b>1st Semester</b>
+        <input type="radio" id="2ndSem" name="semester" required> <b>2nd Semester</b>
+        <input type="radio" id="3rdSem" name="semester" required> <b>3rd Semester</b>
+    </div>
 
 </body>
 
-<body>
-    <p><u>ACCEPTED</u></p>
-    <table border="3px">
-        <tr>
-            <th>Code</th>
-            <th>Description</th>
-            <th>Course, Year & Section</th>
-            <th>Day</th>
-            <th>Time</th>
-            <th>Room</th>
-            <th>Units</th>
-            <th>Faculty Signature Over Printed Name and Date</th>
-        </tr>
-    </table>
-</body>
 
 </html>
