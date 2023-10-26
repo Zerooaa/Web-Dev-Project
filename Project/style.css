@@ -35,11 +35,15 @@ body{
     filter: blur(3px);
 }
 .backgroundx{
+    padding-left: 5%;
     width: 100%;
     height: 100vh;
     flex: 50%;
-    align-items: right;
-    justify-content: right;
+    align-items: left;
+    justify-content:left;
+}
+.backgroundx img{
+    margin-bottom: -5%;
 }
 .insTitle{
     padding: 3px 3px;
@@ -84,7 +88,7 @@ form{
 input, textarea{
     width: 85%;
     padding: 10px;
-    outline: 0;
+    outline: 10px;
     border: 1px solid rgb(255, 255, 255);
     color:rgb(255, 255, 255);
     background: transparent;
