@@ -8,7 +8,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    min-height: 100vh;
+    height: 127%;
     background-image: url(https://github.com/Zerooaa/Web-Dev-Project/blob/main/Images/Website%20Image.jpg?raw=true);
     background-repeat: no-repeat;
     background-size: cover;
@@ -29,7 +29,7 @@ body{
     height: 160%;
     background: url(https://github.com/Zerooaa/Web-Dev-Project/blob/main/Images/Website%20Image.jpg?raw=true);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size:cover;
     background-attachment: fixed;
     z-index: -1;
     filter: blur(3px);
@@ -93,7 +93,7 @@ input, textarea{
     padding: 10px;
     outline: 10px;
     border: 1px solid rgb(0, 0, 0);
-    color:rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
     font-size: 20px;
     resize: none;
 }
@@ -108,7 +108,6 @@ input, textarea{
     cursor: text;
     transition: 0.2s;
 }
-
 button{
     padding: 10px 0;
     color: rgb(0, 0, 0);
@@ -173,13 +172,12 @@ input[type="radio"]:checked + span:before{
     box-shadow: inset 0 0 0 5px maroon;
 }
 button{
-    margin-top: 25%;
-    margin-left: 40%;
+    margin-top: 5%;
+    margin-left: 39%;
     width: 200px;
     position: center;
 }
-
-.container{
+.container1{
     display: flex;
 }
 .fill-group1{
@@ -197,16 +195,26 @@ button{
     cursor: text;
     transition: 0.2s;
 }
-.form1{
-    margin-top: 20%;
-}
 .form2{
-    margin-top: 20%;
-    margin-left: 17%;
+    margin-top: -7%;
+    margin-left: 19%;
 }
 .form3{
-    margin-top: 20%;
-    margin-left: 19%;
+   margin-top: -7%;
+    margin-left: 18%;
+}
+.formreleased img{
+    margin-left: -5%;
+    margin-bottom: -23%;
+}
+.formaccepted img{
+    margin-left: -5%;   
+    margin-bottom: -23%;
+}
+.background3{
+    border: 1px solid black;
+    background-color: maroon;
+    opacity: 0.8;
 }
 
 
