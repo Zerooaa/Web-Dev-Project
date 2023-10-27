@@ -21,6 +21,7 @@
     </div> 
     <br>
     <hr style="height:3px;background-color: black;"> 
+    <br>
     <div class="insTitle";>
         <b>INSTRUCTIONS:</b>
     </div>
@@ -40,44 +41,134 @@
 
         <div class="backgroundx">
             <img src="https://github.com/Zerooaa/Web-Dev-Project/blob/main/Images/Form%201%20Pic.png?raw=true" height="200">
-            <form>
-                <div class="fill-group">
-                    <input type="text" id="result" required>
-                    <label for="result">Branch/Campus</label>
-                </div>
-                <div class="fill-group">
-                    <input type="text" id="name" required>
-                    <label for="name">Student Name</label>
-                </div>
-                <div class="semGroup">
-                    <b style="font-size: 150%;">Semester:</b>
-                    <br>
-                </div>
-                <br>
-                <div class="container">
-                        <label>
-                            <input type="radio" id="1stSem" name="radio">
-                            <span><b>1st Semester</b></span>
-                        </label>
+            <div class="container">
+                <div class="form1">
+                    <form>
+                        <div class="fill-group">
+                            <input type="text" id="result" required>
+                            <label for="result">Branch/Campus</label>
+                        </div>
+                        <div class="fill-group">
+                            <input type="text" id="name" required>
+                            <label for="name">Student Name</label>
+                        </div>
+                        <div class="semGroup">
+                            <b style="font-size: 150%;">Semester:</b>
+                            <br>
+                        </div>
                         <br>
-                        <label>
-                            <input type="radio" id="2ndSem" name="radio">
-                            <span><b>2nd Semester</b></span>
-                        </label>
+                        <div class="container">
+                                <label>
+                                    <input type="radio" id="1stSem" name="radio">
+                                    <span><b>1st Semester</b></span>
+                                </label>
+                                <br>
+                                <label>
+                                    <input type="radio" id="2ndSem" name="radio">
+                                    <span><b>2nd Semester</b></span>
+                                </label>
+                                <br>
+                                <label>
+                                    <input type="radio" id="Summer" name="radio">
+                                    <span><b>Summer</b></span>
+                                </label>
+                        </div>
                         <br>
-                        <label>
-                            <input type="radio" id="Summer" name="radio">
-                            <span><b>Summer</b></span>
-                        </label>
+                        <br>
+                        <div class="fill-group">
+                            <textarea id="message" rows="8" required></textarea>
+                            <label for="message">Reason</label>
+                        </div> 
+                    </form>
                 </div>
-                <br>
-                <br>
-                <div class="fill-group">
-                    <textarea id="message" rows="8" required></textarea>
-                    <label for="message">Reason</label>
+                <div class="form2">
+                    <form>
+                        <div class="formreleased">
+                            <b>RELEASED</b>
+                        </div>
+                        <div class="fill-group1">
+                            <input type="text" id="subject" required>
+                            <label for="subject">Subject Code</label>
+                        </div>
+                        <div class="fill-group1">
+                            <input type="text" id="desc" required>
+                            <label for="desc">Description</label>
+                        </div>
+                        <div class="fill-group1">
+                            <input type="text" id="cys" required>
+                            <label for="cys">Course, Year and Section</label>
+                        </div>
+                        <div class="fill-group1">
+                            <input type="text" id="day" required>
+                            <label for="day">Day</label>
+                        </div>
+                        <div class="fill-group1">
+                            <input type="text" id="time" required>
+                            <label for="time">Time</label>
+                        </div>
+                        <div class="fill-group1">
+                            <input type="text" id="room" required>
+                            <label for="room">Room</label>
+                        </div>
+                        <div class="fill-group1">
+                            <input type="text" id="units" required>
+                            <label for="units">Units</label>
+                        </div>
+                        <div class="fill-group1">
+                            <input type="text" id="facultyname" required>
+                            <label for="facultyname">Faculty Name</label>
+                        </div>
+                        <div class="fill-group1">
+                            <input type="text" id="date" required>
+                            <label for="date">Date</label>
+                        </div>
+                    </form>
                 </div>
-                <button type="next">Next</button>
-            </form>
+                <div class="form3">
+                    <form>
+                        <div class="formaccepted">
+                            <b>Accepted</b>
+                        </div>
+                        <div class="fill-group1">
+                            <input type="text" id="subject" required>
+                            <label for="subject">Subject Code</label>
+                        </div>
+                        <div class="fill-group1">
+                            <input type="text" id="desc" required>
+                            <label for="desc">Description</label>
+                        </div>
+                        <div class="fill-group1">
+                            <input type="text" id="cys" required>
+                            <label for="cys">Course, Year and Section</label>
+                        </div>
+                        <div class="fill-group1">
+                            <input type="text" id="day" required>
+                            <label for="day">Day</label>
+                        </div>
+                        <div class="fill-group1">
+                            <input type="text" id="time" required>
+                            <label for="time">Time</label>
+                        </div>
+                        <div class="fill-group1">
+                            <input type="text" id="room" required>
+                            <label for="room">Room</label>
+                        </div>
+                        <div class="fill-group1">
+                            <input type="text" id="units" required>
+                            <label for="units">Units</label>
+                        </div>
+                        <div class="fill-group1">
+                            <input type="text" id="facultyname" required>
+                            <label for="facultyname">Faculty Name</label>
+                        </div>
+                        <div class="fill-group1">
+                            <input type="text" id="date" required>
+                            <label for="date">Date</label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <button type="next">Next</button>
         </div>
 </body>
 </html>

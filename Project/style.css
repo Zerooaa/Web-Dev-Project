@@ -27,7 +27,7 @@ body{
     left: 0;
     width: 100%;
     height: 160%;
-    background-image: url(https://github.com/Zerooaa/Web-Dev-Project/blob/main/Images/Website%20Image.jpg?raw=true);
+    background: url(https://github.com/Zerooaa/Web-Dev-Project/blob/main/Images/Website%20Image.jpg?raw=true);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -43,7 +43,7 @@ body{
     justify-content:left;
 }
 .backgroundx img{
-    margin-bottom: -5%;
+    margin-bottom: -4%;
 }
 .backgroundx button{
     align-items: center;
@@ -92,9 +92,8 @@ input, textarea{
     width: 85%;
     padding: 10px;
     outline: 10px;
-    border: 1px solid rgb(255, 255, 255);
+    border: 1px solid rgb(0, 0, 0);
     color:rgb(255, 255, 255);
-    background: transparent;
     font-size: 20px;
     resize: none;
 }
@@ -105,17 +104,16 @@ input, textarea{
     left: 0;
     top: 0;
     padding: 10px;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     cursor: text;
     transition: 0.2s;
 }
 
 button{
     padding: 10px 0;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     outline: none;
-    background: transparent;
-    border: 1px solid rgb(255, 255, 255);
+    border: 1px solid rgb(0, 0, 0);
     width: 50%;
     cursor: pointer;
     font-size: 120%;
@@ -171,11 +169,45 @@ input[type="radio"]:checked + span{
     transition: .25s ease;
     box-shadow: inset 0 0 0 2px black;
 }
-
 input[type="radio"]:checked + span:before{
     box-shadow: inset 0 0 0 5px maroon;
 }
+button{
+    margin-top: 25%;
+    margin-left: 40%;
+    width: 200px;
+    position: center;
+}
 
-.row{
+.container{
     display: flex;
 }
+.fill-group1{
+    margin-bottom: 30px;
+    position: relative;
+    font-size: 120%;
+}
+.fill-group1 label{
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    cursor: text;
+    transition: 0.2s;
+}
+.form1{
+    margin-top: 20%;
+}
+.form2{
+    margin-top: 20%;
+    margin-left: 17%;
+}
+.form3{
+    margin-top: 20%;
+    margin-left: 19%;
+}
+
+
+
