@@ -243,10 +243,12 @@ button{
 .studentform input{
     width: 20%;
     height: 1%;
+    cursor: text;
 }
 .formresult input{
     width: 20%;
     height: 1%;
+    cursor: text;
 }
 .background5{
     border: 1px solid black;
