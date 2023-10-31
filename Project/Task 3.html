@@ -19,46 +19,104 @@
         <a href="Task 1.html"><img src="https://github.com/Zerooaa/Web-Dev-Project/blob/main/Images/PUP%20LOGO.png?raw=true" height="150" width="150"></a> 
     </div> 
     <br>
-    <hr style="height:3px;background-color: black;"> 
+    <hr style="height:3px;background-color: black;">
     <br>
-    <div class="background5">
-        <div class="formresult">
-            <br>
-            <b>Number of Unit and Hours (Originally Enrolled) based on Registration Certificate: </b>
-            <br>
-            <input type="text" id="hoursenrolled" required>
-            <br>
-            <b>Number of Unit and Hours Added: </b>
-            <br>
-            <input type="text" id="unitandhoursadded" required>
-            <br>
-            <b>Total Number of Units and Hours Enrolled:</b>
-            <br>
-            <input type="text" id="totalunitandhoursenrolled" required>
+    <div class="backbutton">
+        <a href="Task 2.html"><button><b>BACK</b></button></a>
+    </div>
+    <br>
+    <div class="container2">
+        <div class="background5">
+            <caption><b>Released Subjects</b></caption>
+            <div class="tableforreleased">
+                <table>
+                    <tr>
+                        <th width="15%">Subject Code</th>
+                        <th width="15%">Course, Year, and Section</th>
+                        <th width="10%">Day</th>
+                        <th width="10%">Time</th>
+                        <th width="10%">Room</th>
+                        <th width="10%">Units</th>
+                        <th width="15%">Faculty Name</th>
+                    </tr>
+                    <tr>
+                        <td>Sample</td>
+                        <td>Sample</td>
+                        <td>Sample</td>
+                        <td>Sample</td>
+                        <td>Sample</td>
+                        <td>Sample</td>
+                        <td>Sample</td>
+                    </tr>
+                </table>
+            </div>
+            <caption><b>Accepted Subjects</b></caption>
+            <div class="tableforaccepted">
+                <table>
+                    <tr>
+                        <th width="15%">Subject Code</th>
+                        <th width="15%">Course, Year, and Section</th>
+                        <th width="10%">Day</th>
+                        <th width="10%">Time</th>
+                        <th width="10%">Room</th>
+                        <th width="10%">Units</th>
+                        <th width="15%">Faculty Name</th>
+                    </tr>
+                    <tr>
+                        <td>Sample</td>
+                        <td>Sample</td>
+                        <td>Sample</td>
+                        <td>Sample</td>
+                        <td>Sample</td>
+                        <td>Sample</td>
+                        <td>Sample</td>
+                    </tr>
+                </table>
+            </div>
         </div>
         <br>
-        <br>
-        <div class="studentform">
-            <b>Student Number: </b>
+        <div class="background6">
+            <div class="formresult">
+                <br>
+                <b>Number of Unit and Hours (Originally Enrolled) </b>
+                <br>
+                <b>based on Registration Certificate: </b>
+                <br>
+                <input type="number" id="hoursenrolled" required>
+                <br>
+                <b>Number of Unit and Hours Added: </b>
+                <br>
+                <input type="number" id="unitandhoursadded" required>
+                <br>
+                <b>Total Number of Units and Hours Enrolled:</b>
+                <br>
+                <input type="number" id="totalunitandhoursenrolled" required>
+            </div>
             <br>
-            <input type="text" id="studentnumber" required>
             <br>
-            <b>Course: </b>
-            <br>
-            <input type="text" id="course" required>
-            <br>
-            <b>Year and Section: </b>
-            <br>
-            <input type="text" id="yrandsec" required>
-            <br>
-            <b>Signature Over Printed Name of Student:</b>
-            <br>
-            <br>
-            <input type="file" name="inputfile" id="fileinput">
+            <div class="studentform">
+                <b>Student Number: </b>
+                <br>
+                <input type="text" id="studentnumber" required>
+                <br>
+                <b>Course: </b>
+                <br>
+                <input type="text" id="course" required>
+                <br>
+                <b>Year and Section </b>
+                <br>
+                <input type="text" id="yrandsec" required>
+                <br>
+                <br>
+                <b>Signature Over Printed Name of Student: </b>
+                <br>
+                <br>
+                <input type="file" name="inputfile" id="fileinput">
+                <br>
+            </div>
+            <button>Submit</button>
             <br>
         </div>
-        <button>Submit</button>
-        <br>
     </div>
 </body>
 </html>

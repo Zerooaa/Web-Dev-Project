@@ -191,7 +191,7 @@ input[type="radio"]:checked + span:before{
 }
 button{
     margin-top: 5%;
-    margin-left: 39%;
+    margin-left: 40%;
     width: 200px;
     position: center;
 }
@@ -214,6 +214,15 @@ button{
     cursor: text;
     transition: 0.2s;
 }
+.fill-group1 input{
+    width: 105%;
+    padding: 10px;
+    outline: 10px;
+    border: 1px solid rgb(0, 0, 0);
+    color:rgb(0, 0, 0);
+    font-size: 20px;
+    resize: none;
+}
 .form2{
     margin-top: -7%;
     margin-left: 19%;
@@ -223,12 +232,34 @@ button{
     margin-left: 18%;
 }
 .formreleased img{
-    margin-left: -5%;
+    margin-left: -2%;
     margin-bottom: -23%;
 }
 .formaccepted img{
-    margin-left: -5%;   
+    margin-left: -1%;   
     margin-bottom: -23%;
+}
+.container2{
+    display: flex;;
+}
+.background5{
+    border: 1px solid black;
+    background-color: maroon;
+    opacity: 0.8;
+    width: 50%;
+    margin-left: 2%;
+}
+.backbutton{
+    font-size: 100%;
+    font-weight: bold;
+    text-align: center;
+    margin-left: -63%;
+    margin-top: -8%;
+}
+table, th, td{
+    border: 1px solid black;
+    background-color: white;
+    color: black;
 }
 .formresult{
     font-size: 120%;
@@ -241,29 +272,28 @@ button{
     text-align: center;
 }
 .studentform input{
-    width: 20%;
+    width: 30%;
     height: 1%;
     cursor: text;
 }
 .formresult input{
-    width: 20%;
+    width: 30%;
     height: 1%;
     cursor: text;
 }
-.background5{
+.background6{
     border: 1px solid black;
     background-color: maroon;
     opacity: 0.8;
     height: 10%;
-    width: 35%;
-    margin-left: 32%;
+    width: 43%;
+    margin-left: 3%;
 }
-.background5 button{
-    margin-left: 35%;
+.background6 button{
+    margin-left: 38%;
 }
 .background5 input  {
     width:30%
 }
-
 
 
