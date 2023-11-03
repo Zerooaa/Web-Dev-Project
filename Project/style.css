@@ -1,3 +1,4 @@
+
 *{
     margin: 0px;
     padding: 0px;
@@ -191,7 +192,7 @@ input[type="radio"]:checked + span:before{
 }
 button{
     margin-top: 5%;
-    margin-left: 40%;
+    margin-left: 39%;
     width: 200px;
     position: center;
 }
@@ -215,7 +216,7 @@ button{
     transition: 0.2s;
 }
 .fill-group1 input{
-    width: 105%;
+    width: 80%;
     padding: 10px;
     outline: 10px;
     border: 1px solid rgb(0, 0, 0);
@@ -225,19 +226,33 @@ button{
 }
 .form2{
     margin-top: -7%;
-    margin-left: 19%;
+    margin-left: 17%;
 }
 .form3{
     margin-top: -7%;
-    margin-left: 18%;
+    margin-left: 10%;
 }
 .formreleased img{
     margin-left: -2%;
-    margin-bottom: -23%;
+    margin-bottom: -17%;
 }
 .formaccepted img{
     margin-left: -1%;   
-    margin-bottom: -23%;
+    margin-bottom: -17%;
+}
+.form2 button{
+    margin-left: 19%;
+}
+.form3 button{
+    margin-left: 20%;
+}
+.form2 table{
+    margin-top: 10%;
+    margin-left: -17%;
+}
+.form3 table{
+    margin-top: 10%;
+    margin-left: -20%;
 }
 .container2{
     display: flex;;
