@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application for Change of Enrollment(ACE) Form</title>
+</head>
+<body>
+    <div class="background1"></div>
+    <div style="text-align: center;">
+        <br>
+        <b style="-webkit-text-fill-color:rgb(255, 255, 255); font-size: 90%">REPUBLIC OF THE PHILIPPINES</b>
+        <br>
+        <b style="-webkit-text-fill-color:rgb(255, 255, 255); font-size: 130%">POLYTECHNIC UNIVERSITY OF THE PHILIPPINES</b>
+        <br>
+        <b style="-webkit-text-fill-color:rgb(255, 255, 255);">OFFICE OF THE BRANCH/CAMPUS REGISTRAR</b>
+        <br>
+        <br>
+        <img src="https://github.com/Zerooaa/Web-Dev-Project/blob/main/Images/PUP%20LOGO.png?raw=true" height="150" width="150">
+    </div>
+    <br>
+    <br>
+    <div class="backgroundform1">
+        <div class="form1">
+            <nav>
+                <ul class="nav-area">
+                    <li><a>Student Info</a></li>
+                    <li><a>Subjects/Enrolled/Release</a></li>
+                    <li><a>Finalize</a></li>
+                </ul>
+            </nav>
+            <form>
+                <br>
+                <br>
+                <div class="fill-group">
+                    <input type="text" id="result" required>
+                    <label for="result">Branch/Campus</label>
+                </div>
+                <div class="fill-group">
+                    <input type="text" id="name" required>
+                    <label for="name">Student Name</label>
+                </div>
+                <div class="semGroup">
+                    <b style="font-size: 150%;">Semester:</b>
+                    <br>
+                </div>
+                <br>
+                <div class="semcontainer">
+                        <label>
+                            <input type="radio" id="1stSem" name="radio">
+                            <span><b>1st Semester</b></span>
+                        </label>
+                        <br>
+                        <label>
+                            <input type="radio" id="2ndSem" name="radio">
+                            <span><b>2nd Semester</b></span>
+                        </label>
+                        <br>
+                        <label>
+                            <input type="radio" id="Summer" name="radio">
+                            <span><b>Summer</b></span>
+                        </label>
+                </div>
+                <br>
+                <br>
+                <div class="fill-group">
+                    <textarea id="message" rows="8" required></textarea>
+                    <label for="message">Reason</label>
+                </div> 
+            </form>
+        </div>
+    </div>
+</body>
+</html>
