@@ -10,9 +10,22 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 127%;
+    height: 100%;
     background-image: url(https://github.com/Zerooaa/Web-Dev-Project/blob/main/Images/Website%20Image.jpg?raw=true);
-    background-repeat: no-repeat;
+    background-repeat:repeat;
+    background-size: cover;
+    z-index: -1;
+    filter: blur(3px);
+}
+.background2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 50%;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://github.com/Zerooaa/Web-Dev-Project/blob/main/Images/Website%20Image.jpg?raw=true);
+    background-repeat:repeat;
     background-size: cover;
     z-index: -1;
     filter: blur(3px);
@@ -139,7 +152,7 @@ textarea:valid~label{
     top: -35px;
     font-size: 16px;
 }
-.progress{
+.progress1{
     width: 1000px;
     height: 40px;
     margin: auto;
@@ -148,20 +161,20 @@ textarea:valid~label{
     border: 1px solid black;
     position: relative;
 }
-.progress-col{
+.progress-col1{
     width: 1000px;
     text-align: center;
     color: white;
     position: relative;
 }
-#progressBar{
+#progressBar1{
     position: absolute;
     height: 100%;
     width: 350px;
     background: linear-gradient(to right, maroon, yellow);
     transition: 1s;
 }
-#progressBar::after{
+#progressBar1::after{
     height: 0;
     width: 0;
     border-top: 20px solid transparent;
@@ -177,3 +190,46 @@ textarea:valid~label{
 }
 
 /* Form 1 */
+
+/* Form 2 */
+.backgroundform2{
+    border: 1px solid black;
+    background-color: maroon;
+    opacity: 0.8;
+    border: 1px solid black;
+    height: 900px;
+    width: 1000px;
+    margin: auto;
+}
+.progress2{
+    width: 1000px;
+    height: 40px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    position: relative;
+}
+.progress-col2{
+    width: 1000px;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+#progressBar2{
+    position: absolute;
+    height: 100%;
+    width: 700px;
+    background: linear-gradient(to right, maroon, yellow);
+    transition: 1s;
+}
+#progressBar2::after{
+    height: 0;
+    width: 0;
+    border-top: 20px solid transparent;
+    border-bottom:  20px solid transparent;
+    position: absolute;
+    right: -20px;
+    top: 0;
+    border-left: 20px solid yellow;
+}
