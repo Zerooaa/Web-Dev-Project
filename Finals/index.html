@@ -23,13 +23,12 @@
     <br>
     <div class="backgroundform1">
         <div class="form1">
-            <nav>
-                <ul class="nav-area">
-                    <li><a>Student Info</a></li>
-                    <li><a>Subjects/Enrolled/Release</a></li>
-                    <li><a>Finalize</a></li>
-                </ul>
-            </nav>
+            <div class="progress">
+                <div id="progressBar"></div>
+                <div class="progress-col">Student Info</div>
+                <div class="progress-col">Subjects Released & Accepted</div>
+                <div class="progress-col">Finalization</div>
+            </div>
             <form>
                 <br>
                 <br>
@@ -69,7 +68,59 @@
                     <label for="message">Reason</label>
                 </div> 
             </form>
+            <button class="btnNext1">Next</button>
+        </div>
+        <div class="form2">
+            <form>
+            <div class="fill-group1">
+                <input type="text" id="subject1" required>
+                <label for="subject1">Subject Code</label>
+            </div>
+            <div class="fill-group1">
+                <input type="text" id="cys1" required>
+                <label for="cys1">Course, Year and Section</label>
+            </div>
+            <div class="fill-group1">
+                <p style="font-size: 120%"><b>Date and Time:</b></p>
+                <input type="datetime-local" id="dayandtime1" required>
+            </div>
+            <div class="fill-group1">
+                <input type="text" id="room1" required>
+                <label for="room1">Room</label>
+            </div>
+            <div class="fill-group1">
+                <input type="text" id="units1" required>
+                <label for="units1">Units</label>
+            </div>
+            <div class="fill-group1">
+                <input type="text" id="facultyname1" required>
+                <label for="facultyname1">Faculty Name</label>
+            </div>
+            <button id="btnAdd1">Add Data</button>
+            </form>
+            </form>
+        </div>
+        <div class="tableforreleased">
+            <table id="table1">
+                <tr>
+                    <th width="15%">Subject Code</th>
+                    <th width="15%">Course, Year, and Section</th>
+                    <th width="10%">Day and Time</th>
+                    <th width="10%">Room</th>
+                    <th width="10%">Units</th>
+                    <th width="15%">Faculty Name</th>
+                </tr>
+                <tr>
+                    <td>Sample</td>
+                    <td>Sample</td>
+                    <td>Sample</td>
+                    <td>Sample</td>
+                    <td>Sample</td>
+                    <td>Sample</td>
+                </tr>
+            </table>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
