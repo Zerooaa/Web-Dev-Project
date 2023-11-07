@@ -6,16 +6,16 @@
 }
 
 .background1{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url(https://github.com/Zerooaa/Web-Dev-Project/blob/main/Images/Website%20Image.jpg?raw=true);
-    background-repeat:repeat;
+    width: 100vw;
+    height: 100vh;
+    display: table;
     background-size: cover;
-    z-index: -1;
-    filter: blur(3px);
+    background-position: center;
+
+}
+.background1:nth-child(1){
+    background-image: -webkit-linear-gradient(rgba(85, 40, 40, 0.978),rgba(10, 10, 10, 0.758)), url(https://github.com/Zerooaa/Web-Dev-Project/blob/main/Images/Website%20Image.jpg?raw=true);
+    position: relative;
 }
 .background2{
     position: absolute;
@@ -116,11 +116,14 @@ input[type="radio"]:checked + span{
     box-shadow: inset 0 0 0 5px maroon;
 }
 
-.fill-group{
+.studentinfo{
+    margin-bottom: -50px;
+}
+.fill-group1{
     margin-bottom: 30px;
     position: relative;
     font-size: 120%;
-    margin-top: 45px;
+    margin-top: 10px;
 }
 
 .form1 input, textarea{
@@ -133,7 +136,7 @@ input[type="radio"]:checked + span{
     resize: none;
 }
 
-.fill-group label{
+.fill-group1 label{
     height: 100%;
     position: absolute;
     left: 0;
@@ -191,6 +194,12 @@ textarea:valid~label{
 
 /* Form 1 */
 
+
+
+/* -------------------------------- */
+
+
+
 /* Form 2 */
 .backgroundform2{
     border: 1px solid black;
@@ -201,6 +210,58 @@ textarea:valid~label{
     width: 1000px;
     margin: auto;
 }
+
+.form2{
+    text-align: center;
+}
+.fill-group2{
+    margin-bottom: 2px;
+    position: relative;
+    font-size: 120%;
+}
+
+.fill-group2 label{
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    cursor: text;
+    transition: 0.2s;
+    margin-left: 15%;
+    margin-top: 30px;
+}
+
+.form2 input, textarea{
+    width: 50%;
+    padding: 10px;
+    outline: 0px;
+    border: 1px solid rgb(0, 0, 0);
+    color:rgb(0, 0, 0);
+    font-size: 20px;
+    resize: none;
+}
+
+.fill-group2 input{
+    margin-top: 27px;
+    width: 70%;
+    padding: 10px;
+    outline: 10px;
+    border: 1px solid rgb(0, 0, 0);
+    color:rgb(0, 0, 0);
+    font-size: 20px;
+    resize: none;
+}
+
+.form2 input:focus~label,
+input:valid~label,
+textarea:focus~label,
+textarea:valid~label{
+    top: -35px;
+    font-size: 16px;
+}
+
 .progress2{
     width: 1000px;
     height: 40px;
@@ -233,3 +294,34 @@ textarea:valid~label{
     top: 0;
     border-left: 20px solid yellow;
 }
+
+.formreleased img{
+    margin-left: -2%;
+    margin-bottom: -10%;
+}
+.formaccepted img{
+    margin-left: -1%;   
+    margin-bottom: -17%;
+}
+
+.form2 button{
+    padding: 10px 0;
+    color: rgb(0, 0, 0);
+    outline: none;
+    border: 1px solid rgb(0, 0, 0);
+    width: 50%;
+    cursor: pointer;
+    font-size: 120%;
+    display: block;
+    margin: auto;
+    margin-top: 2%;
+    margin-left: 39%;
+    width: 200px;
+}
+table, th, td{
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+}
+
+/* Form 2 */

@@ -7,7 +7,7 @@
     <title>Application for Change of Enrollment(ACE) Form</title>
 </head>
 <body>
-    <div class="background1"></div>
+    <div class="background1">
     <div style="text-align: center;">
         <br>
         <b style="-webkit-text-fill-color:rgb(255, 255, 255); font-size: 90%">REPUBLIC OF THE PHILIPPINES</b>
@@ -30,14 +30,17 @@
                     <div class="progress-col1">Subjects Released & Accepted</div>
                     <div class="progress-col1">Finalization</div>
                 </div>
+                <div class="studentinfo">
+                    <img src="https://github.com/Zerooaa/Web-Dev-Project/blob/main/Images/Student_Info.png?raw=true" height="200">
+                </div>
                 <form>
                     <br>
                     <br>
-                    <div class="fill-group">
+                    <div class="fill-group1">
                         <input type="text" id="result" required>
                         <label for="result">Branch/Campus</label>
                     </div>
-                    <div class="fill-group">
+                    <div class="fill-group1">
                         <input type="text" id="name" required>
                         <label for="name">Student Name</label>
                     </div>
@@ -64,7 +67,7 @@
                     </div>
                     <br>
                     <br>
-                    <div class="fill-group">
+                    <div class="fill-group1">
                         <textarea id="message" rows="8" required></textarea>
                         <label for="message">Reason</label>
                     </div> 
@@ -82,35 +85,41 @@
                     <div class="progress-col2">Subjects Released & Accepted</div>
                     <div class="progress-col2">Finalization</div>
                 </div>
+                <div class="formreleased">
+                    <img src="https://github.com/Zerooaa/Web-Dev-Project/blob/main/Images/Released.png?raw=true" height="200">
+                </div>
                 <form>
-                <div class="fill-group1">
+                <div class="fill-group2">
                     <input type="text" id="subject1" required>
                     <label for="subject1">Subject Code</label>
                 </div>
-                <div class="fill-group1">
+                <div class="fill-group2">
                     <input type="text" id="cys1" required>
                     <label for="cys1">Course, Year and Section</label>
                 </div>
-                <div class="fill-group1">
-                    <p style="font-size: 120%"><b>Date and Time:</b></p>
+                <div class="fill-group2">
+                    <br>
+                    <p style="font-size: 120%; -webkit-text-fill-color: white;"><b>Date and Time:</b></p>
                     <input type="datetime-local" id="dayandtime1" required>
                 </div>
-                <div class="fill-group1">
+                <div class="fill-group2">
                     <input type="text" id="room1" required>
                     <label for="room1">Room</label>
                 </div>
-                <div class="fill-group1">
+                <div class="fill-group2">
                     <input type="text" id="units1" required>
                     <label for="units1">Units</label>
                 </div>
-                <div class="fill-group1">
+                <div class="fill-group2">
                     <input type="text" id="facultyname1" required>
                     <label for="facultyname1">Faculty Name</label>
                 </div>
                 <button id="btnAdd1">Add Data</button>
                 </form>
             </div>
-            <div class="tableforreleased">
+            <br>
+            <br>
+            <div class="tableforreleased" style="-webkit-text-fill-color: black;">
                 <table id="table1">
                     <tr>
                         <th width="15%">Subject Code</th>
@@ -120,18 +129,11 @@
                         <th width="10%">Units</th>
                         <th width="15%">Faculty Name</th>
                     </tr>
-                    <tr>
-                        <td>Sample</td>
-                        <td>Sample</td>
-                        <td>Sample</td>
-                        <td>Sample</td>
-                        <td>Sample</td>
-                        <td>Sample</td>
-                    </tr>
                 </table>
             </div>
         </div>
     </div>
     <script src="script.js"></script>
+</div>
 </body>
 </html>
