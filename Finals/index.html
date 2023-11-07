@@ -21,6 +21,19 @@
     </div>
     <br>
     <br>
+    <div class="instructions">
+        <br>
+        <p style="-webkit-text-fill-color: white; text-align: center;">Application for Change of Enrollment(ACE) Form</p>
+        <br>
+        <p style="-webkit-text-fill-color: white;">1. Fill-out all blank spaces provided in this form with appropriate information, write <b>N/A</b> if not applicable</p>
+        <p style="-webkit-text-fill-color: white;">2. Write the details of subject to change in the <b>RELEASED</b> and <b>ACCEPTED</b> section and have it signed by the faculty handling respectively.</p>
+        <p style="-webkit-text-fill-color: white;">(In case the professor has not yet attended the class, the Branch/Campus Academic Head may sign in lieu of the professor in order to avoid delay in processing of adjustment.)</p>
+        <p style="-webkit-text-fill-color: white;">3. Proceed to your Branch/Campus Academic Head for <b>APPROVAL</b> and <b>TAGGING</b> of the necessary changes. (After tagging, open your SIS Account to check if the necessary changes were done and correct.)</p>
+        <p style="-webkit-text-fill-color: white;">4. Go to the Accounting Student Services (of your Branch/Campus) for the assessment and tagging of necessary fee/s.</p>
+        <p style="-webkit-text-fill-color: white;">5. Pay the assessed fee at the SIS Window in the Branch/Campus Cashier's Office.</p>
+        <p style="-webkit-text-fill-color: white;">6. Photocopy this form and official receipt and submit copy to Office of the Branch/Campus Registrar (Original Copy), Director's Office (photocopy), and keep a personal copy.</p>
+        <br>
+    </div>
     <div class="backgroundform1">
         <div class="container1">
             <div class="form1">
@@ -133,6 +146,7 @@
             </div>
         </div>
     </div>
+    <br>
     <div class="backgroundform3">
         <div class="container3">
             <div class="form3">
@@ -188,6 +202,61 @@
                     </tr>
                 </table>
             </div>
+        </div>
+    </div>
+    <br>
+    <div class="backgroundform4">
+        <div class="form4">
+            <div class="progress4">
+                <div id="progressBar4"></div>
+                <div class="progress-col4">Student Info</div>
+                <div class="progress-col4">Subjects Released & Accepted</div>
+                <div class="progress-col4">Finalization</div>
+            </div>
+            <div class="formresult">
+                <br>
+                <b>Number of Unit and Hours (Originally Enrolled) </b>
+                <br>
+                <b>based on Registration Certificate: </b>
+                <br>
+                <input type="number" id="hoursenrolled" required>
+                <br>
+                <b>Number of Unit and Hours Added: </b>
+                <br>
+                <input type="number" id="unitandhoursadded" required>
+                <br>
+                <b>Total Number of Units and Hours Enrolled:</b>
+                <br>
+                <input type="number" id="totalunitandhoursenrolled" required>
+            </div>
+            <br>
+            <br>
+            <div class="studentform">
+                <b>Student Number: </b>
+                <br>
+                <input type="text" id="studentnumber" required>
+                <br>
+                <b>Course: </b>
+                <br>
+                <input type="text" id="course" required>
+                <br>
+                <b>Year and Section:</b>
+                <br>
+                <input type="text" id="yrandsec" required>
+                <br>
+                <b>Email:</b>
+                <br>
+                <input type="text" id="email" required>
+                <br>
+                <br>
+                <b>Signature Over Printed Name of Student: </b>
+                <br>
+                <br>
+                <input type="file" name="inputfile" id="fileinput" class="customfile">
+                <br>
+            </div>
+            <button id="btnSubmit">Submit</button>
+        <br>
         </div>
     </div>
     <script src="script.js"></script>

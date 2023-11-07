@@ -31,6 +31,19 @@
     filter: blur(3px);
 }
 
+.instructions{
+    border: 1px solid black;
+    background-color: maroon;
+    opacity: 0.8;
+    border: 1px solid black;
+    height: 350px;
+    width: 1000px;
+    margin: auto;
+    text-indent: 2%;
+    font-size: 130%;
+    line-height: 150%;
+    text-align: justify;
+}
 /* Form 1 */
 .backgroundform1{
     border: 1px solid black;
@@ -261,15 +274,6 @@ textarea:valid~label{
     font-size: 16px;
 }
 
-.backgroundform3{
-    border: 1px solid black;
-    background-color: maroon;
-    opacity: 0.8;
-    border: 1px solid black;
-    height: 900px;
-    width: 1000px;
-    margin: auto;
-}
 .progress2{
     width: 1000px;
     height: 40px;
@@ -321,6 +325,15 @@ textarea:valid~label{
 /* -------------------------------- */
 
 /* Form 3 */
+.backgroundform3{
+    border: 1px solid black;
+    background-color: maroon;
+    opacity: 0.8;
+    border: 1px solid black;
+    height: 900px;
+    width: 1000px;
+    margin: auto;
+}
 .form3{
     text-align: center;
 }
@@ -439,6 +452,97 @@ table, th, td{
 /* -------------------------------- */
 
 /* Form 4 */
-
-
+.form4{
+    text-align: center;
+}
+.backgroundform4{
+    border: 1px solid black;
+    background-color: maroon;
+    opacity: 0.8;
+    border: 1px solid black;
+    height: 900px;
+    width: 1000px;
+    margin: auto;
+}
+.formresult{
+    font-size: 120%;
+    word-spacing: 5%;
+    color: white;
+    text-align: center;
+}
+.studentform{
+    font-size: 120%;
+    word-spacing: 5%;
+    color: white;
+    text-align: center;
+}
+.customfile{
+    border: 5px dotted black;
+    border-radius: 50px;
+    padding: 2px;
+    font-size: 20px;
+}
+.customfile::-webkit-file-upload-button{
+    background: linear-gradient(maroon, yellow);
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 50px;
+}
+.form4 input, textarea{
+    width: 50%;
+    padding: 10px;
+    outline: 0px;
+    border: 1px solid rgb(0, 0, 0);
+    color:rgb(0, 0, 0);
+    font-size: 20px;
+    resize: none;
+}
+.progress4{
+    width: 1000px;
+    height: 40px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    position: relative;
+}
+.progress-col4{
+    width: 1000px;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+#progressBar4{
+    position: absolute;
+    height: 100%;
+    width: 997px;
+    background: linear-gradient(to right, maroon, yellow);
+    transition: 1s;
+}
+#progressBar4::after{
+    height: 0;
+    width: 0;
+    border-top: 20px solid transparent;
+    border-bottom:  20px solid transparent;
+    position: absolute;
+    right: -20px;
+    top: 0;
+    border-left: 20px solid yellow;
+}
+.form4 button{
+    padding: 10px 0;
+    color: rgb(0, 0, 0);
+    outline: none;
+    border: 1px solid rgb(0, 0, 0);
+    width: 50%;
+    cursor: pointer;
+    font-size: 120%;
+    display: block;
+    margin: auto;
+    margin-top: 2%;
+    margin-left: 39%;
+    width: 200px;
+}
+/* Form 4 */
 
