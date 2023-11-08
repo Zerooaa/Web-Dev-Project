@@ -64,17 +64,17 @@
                         <br>
                         <div class="semcontainer">
                                 <label>
-                                    <input type="radio" id="1stSem" name="radio">
+                                    <input type="radio" id="1stSem" name="sem">
                                     <span><b>1st Semester</b></span>
                                 </label>
                                 <br>
                                 <label>
-                                    <input type="radio" id="2ndSem" name="radio">
+                                    <input type="radio" id="2ndSem" name="sem">
                                     <span><b>2nd Semester</b></span>
                                 </label>
                                 <br>
                                 <label>
-                                    <input type="radio" id="Summer" name="radio">
+                                    <input type="radio" id="Summer" name="sem">
                                     <span><b>Summer</b></span>
                                 </label>
                         </div>
@@ -84,7 +84,7 @@
                             <textarea id="message" rows="8" required></textarea>
                             <label for="message">Reason</label>
                         </div>
-                        <button name="verify1" onclick="verifyForm()">Verify</button> 
+                        <button name="verify1" onclick="verifyForm1()">Verify</button> 
                     </form>
                 </div>
             </div>
@@ -102,7 +102,7 @@
                     <div class="formreleased">
                         <img src="https://github.com/Zerooaa/Web-Dev-Project/blob/main/Images/Released.png?raw=true" height="200">
                     </div>
-                    <form>
+                    <form name="subjectForm1">
                     <div class="fill-group2">
                         <input type="text" id="subject1" required>
                         <label for="subject1">Subject Code</label>
@@ -128,6 +128,7 @@
                         <input type="text" id="facultyname1" required>
                         <label for="facultyname1">Faculty Name</label>
                     </div>
+                    <button name="btnAdd1" onclick="verifyForm2()">Verify</button>
                     <button id="btnAdd1">Add Data</button>
                     </form>
                 </div>
