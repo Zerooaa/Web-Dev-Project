@@ -34,231 +34,232 @@
         <p style="-webkit-text-fill-color: white;">6. Photocopy this form and official receipt and submit copy to Office of the Branch/Campus Registrar (Original Copy), Director's Office (photocopy), and keep a personal copy.</p>
         <br>
     </div>
-    <div class="backgroundform1">
-        <div class="container1">
-            <div class="form1">
-                <div class="progress1">
-                    <div id="progressBar1"></div>
-                    <div class="progress-col1">Student Info</div>
-                    <div class="progress-col1">Subjects Released & Accepted</div>
-                    <div class="progress-col1">Finalization</div>
-                </div>
-                <div class="studentinfo">
-                    <img src="https://github.com/Zerooaa/Web-Dev-Project/blob/main/Images/Student_Info.png?raw=true" height="200">
-                </div>
-                <form>
-                    <br>
-                    <br>
-                    <div class="fill-group1">
-                        <input type="text" id="result" required>
-                        <label for="result">Branch/Campus</label>
+        <div class="backgroundform1">
+            <div class="container1">
+                <div class="form1">
+                    <div class="progress1">
+                        <div id="progressBar1"></div>
+                        <div class="progress-col1">Student Info</div>
+                        <div class="progress-col1">Subjects Released & Accepted</div>
+                        <div class="progress-col1">Finalization</div>
                     </div>
-                    <div class="fill-group1">
-                        <input type="text" id="name" required>
-                        <label for="name">Student Name</label>
+                    <div class="studentinfo">
+                        <img src="https://github.com/Zerooaa/Web-Dev-Project/blob/main/Images/Student_Info.png?raw=true" height="200">
                     </div>
-                    <div class="semGroup">
-                        <b style="font-size: 150%;">Semester:</b>
+                    <form name="studentInfoForm">
                         <br>
-                    </div>
-                    <br>
-                    <div class="semcontainer">
-                            <label>
-                                <input type="radio" id="1stSem" name="radio">
-                                <span><b>1st Semester</b></span>
-                            </label>
+                        <br>
+                        <div class="fill-group1">
+                            <input type="text" id="branch" required>
+                            <label for="branch">Branch/Campus</label>
+                        </div>
+                        <div class="fill-group1">
+                            <input type="text" id="name" required>
+                            <label for="name">Student Name</label>
+                        </div>
+                        <div class="semGroup">
+                            <b style="font-size: 150%;">Semester:</b>
                             <br>
-                            <label>
-                                <input type="radio" id="2ndSem" name="radio">
-                                <span><b>2nd Semester</b></span>
-                            </label>
-                            <br>
-                            <label>
-                                <input type="radio" id="Summer" name="radio">
-                                <span><b>Summer</b></span>
-                            </label>
-                    </div>
-                    <br>
-                    <br>
-                    <div class="fill-group1">
-                        <textarea id="message" rows="8" required></textarea>
-                        <label for="message">Reason</label>
-                    </div> 
-                </form>
+                        </div>
+                        <br>
+                        <div class="semcontainer">
+                                <label>
+                                    <input type="radio" id="1stSem" name="radio">
+                                    <span><b>1st Semester</b></span>
+                                </label>
+                                <br>
+                                <label>
+                                    <input type="radio" id="2ndSem" name="radio">
+                                    <span><b>2nd Semester</b></span>
+                                </label>
+                                <br>
+                                <label>
+                                    <input type="radio" id="Summer" name="radio">
+                                    <span><b>Summer</b></span>
+                                </label>
+                        </div>
+                        <br>
+                        <br>
+                        <div class="fill-group1">
+                            <textarea id="message" rows="8" required></textarea>
+                            <label for="message">Reason</label>
+                        </div>
+                        <button name="verify1" onclick="verifyForm()">Verify</button> 
+                    </form>
+                </div>
             </div>
         </div>
-    </div>
-    <br>
-    <div class="backgroundform2">
-        <div class="container2">
-            <div class="form2">
-                <div class="progress2">
-                    <div id="progressBar2"></div>
-                    <div class="progress-col2">Student Info</div>
-                    <div class="progress-col2">Subjects Released & Accepted</div>
-                    <div class="progress-col2">Finalization</div>
-                </div>
-                <div class="formreleased">
-                    <img src="https://github.com/Zerooaa/Web-Dev-Project/blob/main/Images/Released.png?raw=true" height="200">
-                </div>
-                <form>
-                <div class="fill-group2">
-                    <input type="text" id="subject1" required>
-                    <label for="subject1">Subject Code</label>
-                </div>
-                <div class="fill-group2">
-                    <input type="text" id="cys1" required>
-                    <label for="cys1">Course, Year and Section</label>
-                </div>
-                <div class="fill-group2">
-                    <br>
-                    <p style="font-size: 120%; -webkit-text-fill-color: white;"><b>Date and Time:</b></p>
-                    <input type="datetime-local" id="dayandtime1" required>
-                </div>
-                <div class="fill-group2">
-                    <input type="text" id="room1" required>
-                    <label for="room1">Room</label>
-                </div>
-                <div class="fill-group2">
-                    <input type="text" id="units1" required>
-                    <label for="units1">Units</label>
-                </div>
-                <div class="fill-group2">
-                    <input type="text" id="facultyname1" required>
-                    <label for="facultyname1">Faculty Name</label>
-                </div>
-                <button id="btnAdd1">Add Data</button>
-                </form>
-            </div>
-            <br>
-            <br>
-            <div class="tableforreleased" style="-webkit-text-fill-color: black;">
-                <table id="table1">
-                    <tr>
-                        <th width="15%">Subject Code</th>
-                        <th width="15%">Course, Year, and Section</th>
-                        <th width="10%">Day and Time</th>
-                        <th width="10%">Room</th>
-                        <th width="10%">Units</th>
-                        <th width="15%">Faculty Name</th>
-                    </tr>
-                </table>
-            </div>
-        </div>
-    </div>
-    <br>
-    <div class="backgroundform3">
-        <div class="container3">
-            <div class="form3">
-                <div class="progress3">
-                    <div id="progressBar3"></div>
-                    <div class="progress-col3">Student Info</div>
-                    <div class="progress-col3">Subjects Released & Accepted</div>
-                    <div class="progress-col3">Finalization</div>
-                </div>
-                <div class="formreleased">
-                    <img src="https://github.com/Zerooaa/Web-Dev-Project/blob/main/Images/Accepted.png?raw=true" height="200">
-                </div>
-                <form>
-                <div class="fill-group3">
-                    <input type="text" id="subject2" required>
-                    <label for="subject2">Subject Code</label>
-                </div>
-                <div class="fill-group3">
-                    <input type="text" id="cys2" required>
-                    <label for="cys2">Course, Year and Section</label>
-                </div>
-                <div class="fill-group3">
-                    <br>
-                    <p style="font-size: 120%; -webkit-text-fill-color: white;"><b>Date and Time:</b></p>
-                    <input type="datetime-local" id="dayandtime2" required>
-                </div>
-                <div class="fill-group3">
-                    <input type="text" id="room2" required>
-                    <label for="room2">Room</label>
-                </div>
-                <div class="fill-group3">
-                    <input type="text" id="units2" required>
-                    <label for="units2">Units</label>
-                </div>
-                <div class="fill-group3">
-                    <input type="text" id="facultyname2" required>
-                    <label for="facultyname2">Faculty Name</label>
-                </div>
-                <button id="btnAdd2">Add Data</button>
-                </form>
-            </div>
-            <br>
-            <br>
-            <div class="tableforreleased" style="-webkit-text-fill-color: black;">
-                <table id="table2">
-                    <tr>
-                        <th width="15%">Subject Code</th>
-                        <th width="15%">Course, Year, and Section</th>
-                        <th width="10%">Day and Time</th>
-                        <th width="10%">Room</th>
-                        <th width="10%">Units</th>
-                        <th width="15%">Faculty Name</th>
-                    </tr>
-                </table>
-            </div>
-        </div>
-    </div>
-    <br>
-    <div class="backgroundform4">
-        <div class="form4">
-            <div class="progress4">
-                <div id="progressBar4"></div>
-                <div class="progress-col4">Student Info</div>
-                <div class="progress-col4">Subjects Released & Accepted</div>
-                <div class="progress-col4">Finalization</div>
-            </div>
-            <div class="formresult">
-                <br>
-                <b>Number of Unit and Hours (Originally Enrolled) </b>
-                <br>
-                <b>based on Registration Certificate: </b>
-                <br>
-                <input type="number" id="hoursenrolled" required>
-                <br>
-                <b>Number of Unit and Hours Added: </b>
-                <br>
-                <input type="number" id="unitandhoursadded" required>
-                <br>
-                <b>Total Number of Units and Hours Enrolled:</b>
-                <br>
-                <input type="number" id="totalunitandhoursenrolled" required>
-            </div>
-            <br>
-            <br>
-            <div class="studentform">
-                <b>Student Number: </b>
-                <br>
-                <input type="text" id="studentnumber" required>
-                <br>
-                <b>Course: </b>
-                <br>
-                <input type="text" id="course" required>
-                <br>
-                <b>Year and Section:</b>
-                <br>
-                <input type="text" id="yrandsec" required>
-                <br>
-                <b>Email:</b>
-                <br>
-                <input type="text" id="email" required>
-                <br>
-                <br>
-                <b>Signature Over Printed Name of Student: </b>
-                <br>
-                <br>
-                <input type="file" name="inputfile" id="fileinput" class="customfile">
-                <br>
-            </div>
-            <button id="btnSubmit">Submit</button>
         <br>
+        <div class="backgroundform2">
+            <div class="container2">
+                <div class="form2">
+                    <div class="progress2">
+                        <div id="progressBar2"></div>
+                        <div class="progress-col2">Student Info</div>
+                        <div class="progress-col2">Subjects Released & Accepted</div>
+                        <div class="progress-col2">Finalization</div>
+                    </div>
+                    <div class="formreleased">
+                        <img src="https://github.com/Zerooaa/Web-Dev-Project/blob/main/Images/Released.png?raw=true" height="200">
+                    </div>
+                    <form>
+                    <div class="fill-group2">
+                        <input type="text" id="subject1" required>
+                        <label for="subject1">Subject Code</label>
+                    </div>
+                    <div class="fill-group2">
+                        <input type="text" id="cys1" required>
+                        <label for="cys1">Course, Year and Section</label>
+                    </div>
+                    <div class="fill-group2">
+                        <br>
+                        <p style="font-size: 120%; -webkit-text-fill-color: white;"><b>Date and Time:</b></p>
+                        <input type="datetime-local" id="dayandtime1" required>
+                    </div>
+                    <div class="fill-group2">
+                        <input type="text" id="room1" required>
+                        <label for="room1">Room</label>
+                    </div>
+                    <div class="fill-group2">
+                        <input type="text" id="units1" required>
+                        <label for="units1">Units</label>
+                    </div>
+                    <div class="fill-group2">
+                        <input type="text" id="facultyname1" required>
+                        <label for="facultyname1">Faculty Name</label>
+                    </div>
+                    <button id="btnAdd1">Add Data</button>
+                    </form>
+                </div>
+                <br>
+                <br>
+                <div class="tableforreleased" style="-webkit-text-fill-color: black;">
+                    <table id="table1">
+                        <tr>
+                            <th width="15%">Subject Code</th>
+                            <th width="15%">Course, Year, and Section</th>
+                            <th width="10%">Day and Time</th>
+                            <th width="10%">Room</th>
+                            <th width="10%">Units</th>
+                            <th width="15%">Faculty Name</th>
+                        </tr>
+                    </table>
+                </div>
+            </div>
         </div>
-    </div>
+        <br>
+        <div class="backgroundform3">
+            <div class="container3">
+                <div class="form3">
+                    <div class="progress3">
+                        <div id="progressBar3"></div>
+                        <div class="progress-col3">Student Info</div>
+                        <div class="progress-col3">Subjects Released & Accepted</div>
+                        <div class="progress-col3">Finalization</div>
+                    </div>
+                    <div class="formreleased">
+                        <img src="https://github.com/Zerooaa/Web-Dev-Project/blob/main/Images/Accepted.png?raw=true" height="200">
+                    </div>
+                    <form>
+                    <div class="fill-group3">
+                        <input type="text" id="subject2" required>
+                        <label for="subject2">Subject Code</label>
+                    </div>
+                    <div class="fill-group3">
+                        <input type="text" id="cys2" required>
+                        <label for="cys2">Course, Year and Section</label>
+                    </div>
+                    <div class="fill-group3">
+                        <br>
+                        <p style="font-size: 120%; -webkit-text-fill-color: white;"><b>Date and Time:</b></p>
+                        <input type="datetime-local" id="dayandtime2" required>
+                    </div>
+                    <div class="fill-group3">
+                        <input type="text" id="room2" required>
+                        <label for="room2">Room</label>
+                    </div>
+                    <div class="fill-group3">
+                        <input type="text" id="units2" required>
+                        <label for="units2">Units</label>
+                    </div>
+                    <div class="fill-group3">
+                        <input type="text" id="facultyname2" required>
+                        <label for="facultyname2">Faculty Name</label>
+                    </div>
+                    <button id="btnAdd2">Add Data</button>
+                    </form>
+                </div>
+                <br>
+                <br>
+                <div class="tableforreleased" style="-webkit-text-fill-color: black;">
+                    <table id="table2">
+                        <tr>
+                            <th width="15%">Subject Code</th>
+                            <th width="15%">Course, Year, and Section</th>
+                            <th width="10%">Day and Time</th>
+                            <th width="10%">Room</th>
+                            <th width="10%">Units</th>
+                            <th width="15%">Faculty Name</th>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="backgroundform4">
+            <div class="form4">
+                <div class="progress4">
+                    <div id="progressBar4"></div>
+                    <div class="progress-col4">Student Info</div>
+                    <div class="progress-col4">Subjects Released & Accepted</div>
+                    <div class="progress-col4">Finalization</div>
+                </div>
+                <div class="formresult">
+                    <br>
+                    <b>Number of Unit and Hours (Originally Enrolled) </b>
+                    <br>
+                    <b>based on Registration Certificate: </b>
+                    <br>
+                    <input type="number" id="hoursenrolled" required>
+                    <br>
+                    <b>Number of Unit and Hours Added: </b>
+                    <br>
+                    <input type="number" id="unitandhoursadded" required>
+                    <br>
+                    <b>Total Number of Units and Hours Enrolled:</b>
+                    <br>
+                    <input type="number" id="totalunitandhoursenrolled" required>
+                </div>
+                <br>
+                <br>
+                <div class="studentform">
+                    <b>Student Number: </b>
+                    <br>
+                    <input type="text" id="studentnumber" required>
+                    <br>
+                    <b>Course: </b>
+                    <br>
+                    <input type="text" id="course" required>
+                    <br>
+                    <b>Year and Section:</b>
+                    <br>
+                    <input type="text" id="yrandsec" required>
+                    <br>
+                    <b>Email:</b>
+                    <br>
+                    <input type="text" id="email" required>
+                    <br>
+                    <br>
+                    <b>Signature Over Printed Name of Student: </b>
+                    <br>
+                    <br>
+                    <input type="file" name="inputfile" id="fileinput" class="customfile">
+                    <br>
+                </div>
+                <button id="btnSubmit">Submit</button>
+            <br>
+            </div>
+        </div>
     <script src="script.js"></script>
 </div>
 </body>

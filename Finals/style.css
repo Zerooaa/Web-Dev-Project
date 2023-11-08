@@ -201,8 +201,18 @@ textarea:valid~label{
     border-left: 20px solid yellow;
 }
 .form1 button{
-    width: 20%;
-    font-size: 150%;
+    padding: 10px 0;
+    color: rgb(0, 0, 0);
+    outline: none;
+    border: 1px solid rgb(0, 0, 0);
+    width: 50%;
+    cursor: pointer;
+    font-size: 120%;
+    display: block;
+    margin: auto;
+    margin-top: 2%;
+    margin-left: 39%;
+    width: 200px;
 }
 
 /* Form 1 */

@@ -42,3 +42,34 @@ const unitsInput2 = document.querySelector('#units2');
 const facultyInput2 = document.querySelector('#facultyname2');
 
 initializeAddButton(btnAdd2, table2, subjectInput2, cysInput2, datInput2, roomInput2, unitsInput2, facultyInput2);
+
+function verifyForm() {
+    event.preventDefault();
+    let branch = document.forms ["studentInfoForm"] ["branch"].value;
+    if (branch == ""){
+        alert("Please Fill out the Branch Field")
+        return false;
+    }
+    let name = document.forms ["studentInfoForm"] ["name"].value;
+    if (name == ""){
+        alert("Please Fill out the Name Field")
+        return false;
+    }
+    let message = document.forms ["studentInfoForm"] ["message"].value;
+    if (message == ""){
+        alert("Please Fill out your Reasoning Field")
+        return false;
+    }
+
+    var rdb1 = document.getElementById("1stSem");
+    var rdb2 = document.getElementById("2ndSem");
+    var rdb3 = document.getElementById("Summer");
+
+    if(rdb1.checked == true || rdb2.checked == true || rdb3.checked == true){
+        alert("Student Info Fill Out Complete");
+    }
+    else{
+        alert("Please Fill out the Semester Field")
+        return false;
+    }
+}
