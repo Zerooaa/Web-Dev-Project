@@ -29,47 +29,47 @@ function verifyForm1() {
     }
 }
 
+
+const btn2 = document.getElementById("btnAdd1");
+btn2.disabled=true;
+
 function verifyForm2(){
     event.preventDefault();
 
-    let subject1 = document.forms ["subjectForm1"] ["subject1"].value;
-    if (subject1 == ""){
-        alert("Please Fill out the Subject Code Field")
-        return false;
-    }
-    let cys1 = document.forms ["subjectForm1"] ["cys1"].value;
-    if (cys1 == ""){
-        alert("Please Fill out the Course, Year, & Section Field")
-        return false;
-    }
-    let room1 = document.forms ["subjectForm1"] ["room1"].value;
-    if (room1 == ""){
-        alert("Please Fill out the Room Field")
-        return false;
-    }
-    let units1 = document.forms ["subjectForm1"] ["units1"].value;
-    if (units1 == ""){
-        alert("Please Fill out the Units Field")
-        return false;
-    }
-    let facultyname1 = document.forms ["subjectForm1"] ["facultyname1"].value;
-    if (facultyname1 == ""){
-        alert("Please Fill out the Faculty Name Field")
-        return false;
-    }
-    else{
-        alert("Subject Info Fill Out Complete");
-    }
+    const btn1 = document.getElementById("btnVerify");
+    const btn2 = document.getElementById("btnAdd1");
+    btn2.disabled=true;
+
+        let subject1 = document.forms ["subjectForm1"] ["subject1"].value;
+        if (subject1 == ""){
+            alert("Please Fill out the Subject Code Field")
+            return false;
+        }
+        let cys1 = document.forms ["subjectForm1"] ["cys1"].value;
+        if (cys1 == ""){
+            alert("Please Fill out the Course, Year, & Section Field")
+            return false;
+        }
+        let room1 = document.forms ["subjectForm1"] ["room1"].value;
+        if (room1 == ""){
+            alert("Please Fill out the Room Field")
+            return false;
+        }
+        let units1 = document.forms ["subjectForm1"] ["units1"].value;
+        if (units1 == ""){
+            alert("Please Fill out the Units Field")
+            return false;
+        }
+        let facultyname1 = document.forms ["subjectForm1"] ["facultyname1"].value;
+        if (facultyname1 == ""){
+            alert("Please Fill out the Faculty Name Field")
+            return false;
+        }
+        else{
+            alert("Subject Info Fill Out Complete");
+            btn2.disabled=false;
+        }    
 }
-
-const btn1 = document.getElementById("btnVerify");
-const btn2 = document.getElementById("btnAdd1");
-
-btn2.disabled=true;
-
-btn1.addEventListener("click", function(){
-    btn2.disabled=false;
-});
 
 function initializeAddButton(btn, table, subjectInput, cysInput, datInput, roomInput, unitsInput, facultyInput) {
     btn.addEventListener('click', (event) => {
