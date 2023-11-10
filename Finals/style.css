@@ -14,7 +14,7 @@
 
 }
 .background1:nth-child(1){
-    background-image: -webkit-linear-gradient(rgba(85, 40, 40, 0.978),rgba(10, 10, 10, 0.758)), url(https://github.com/Zerooaa/Web-Dev-Project/blob/main/Images/Website%20Image.jpg?raw=true);
+    background-image: -webkit-linear-gradient(rgba(85, 40, 40, 0.858),rgba(10, 10, 10, 0.758)), url(https://github.com/Zerooaa/Web-Dev-Project/blob/main/Images/Website%20Image.jpg?raw=true);
     position: relative;
 }
 .background2{

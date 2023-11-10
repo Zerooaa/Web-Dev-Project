@@ -29,7 +29,6 @@ function verifyForm1() {
     }
 }
 
-
 const btn2 = document.getElementById("btnAdd1");
 btn2.disabled=true;
 
@@ -68,6 +67,47 @@ function verifyForm2(){
         else{
             alert("Subject Info Fill Out Complete");
             btn2.disabled=false;
+        }    
+}
+
+const btn3 = document.getElementById("btnAdd2");
+btn3.disabled=true;
+
+function verifyForm3(){
+    event.preventDefault();
+
+    const btn1 = document.getElementById("btnVerify");
+    const btn3 = document.getElementById("btnAdd2");
+    btn3.disabled=true;
+
+        let subject2 = document.forms ["subjectForm2"] ["subject2"].value;
+        if (subject2 == ""){
+            alert("Please Fill out the Subject Code Field")
+            return false;
+        }
+        let cys2 = document.forms ["subjectForm2"] ["cys2"].value;
+        if (cys2 == ""){
+            alert("Please Fill out the Course, Year, & Section Field")
+            return false;
+        }
+        let room2 = document.forms ["subjectForm2"] ["room2"].value;
+        if (room2 == ""){
+            alert("Please Fill out the Room Field")
+            return false;
+        }
+        let units2 = document.forms ["subjectForm2"] ["units2"].value;
+        if (units2 == ""){
+            alert("Please Fill out the Units Field")
+            return false;
+        }
+        let facultyname2 = document.forms ["subjectForm2"] ["facultyname2"].value;
+        if (facultyname2 == ""){
+            alert("Please Fill out the Faculty Name Field")
+            return false;
+        }
+        else{
+            alert("Subject Info Fill Out Complete");
+            btn3.disabled=false;
         }    
 }
 
