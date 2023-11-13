@@ -111,6 +111,30 @@ function verifyForm3(){
         }    
 }
 
+function submitForm1(){
+    let studentnumber = document.forms ["studForm"] ["studentnumber"].value;
+    if (studentnumber == ""){
+        alert("Please Fill out the Student Number Field")
+        return false;
+    }
+    let course = document.forms ["studForm"] ["course"].value;
+    if (course == ""){
+        alert("Please Fill out the Student Number Field")
+        return false;
+    }
+    let yrandsec = document.forms ["studForm"] ["yrandsec"].value;
+    if (yrandsec == ""){
+        alert("Please Fill out the Student Number Field")
+        return false;
+    }
+    let email = document.forms ["studForm"] ["email"].value;
+    if (email == ""){
+        alert("Please Fill out the Student Number Field")
+        return false;
+    }
+
+}
+
 function initializeAddButton(btn, table, subjectInput, cysInput, datInput, roomInput, unitsInput, facultyInput) {
     btn.addEventListener('click', (event) => {
         event.preventDefault();

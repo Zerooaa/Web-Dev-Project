@@ -234,7 +234,7 @@
                 </div>
                 <br>
                 <br>
-                <div class="studentform">
+                <form class="studentform" name="studForm">
                     <b>Student Number: </b>
                     <br>
                     <input type="text" id="studentnumber" required>
@@ -257,8 +257,9 @@
                     <br>
                     <input type="file" name="inputfile" id="fileinput" class="customfile">
                     <br>
-                </div>
-                <button id="btnSubmit">Submit</button>
+                    <button id="btnSubmit" name="btnSubmission" onclick="submitForm1()">Submit</button>
+                </form>
+                
             <br>
             </div>
         </div>
