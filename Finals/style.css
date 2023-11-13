@@ -36,23 +36,28 @@
     background-color: maroon;
     opacity: 0.8;
     border: 1px solid black;
-    height: 350px;
+    height: 525px;
     width: 1000px;
     margin: auto;
     text-indent: 2%;
     font-size: 130%;
     line-height: 150%;
     text-align: justify;
+    text-indent: 1px;
+    padding-left: 20px;
+    padding-right: 25px;
 }
 /* Form 1 */
+
 .backgroundform1{
     border: 1px solid black;
     background-color: maroon;
     opacity: 0.8;
     border: 1px solid black;
-    height: 900px;
+    height: 950px;
     width: 1000px;
     margin: auto;
+    margin-top: 15px;
 }
 
 .nav-area{
@@ -231,6 +236,7 @@ textarea:valid~label{
     height: 900px;
     width: 1000px;
     margin: auto;
+    margin-top: 10px;
 }
 
 .form2{
