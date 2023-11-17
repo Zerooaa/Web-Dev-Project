@@ -206,18 +206,48 @@ const facultyInput2 = document.querySelector('#facultyname2');
 
 initializeAddButton(btnAdd2, table2, subjectInput2, cysInput2, datInput2, roomInput2, unitsInput2, facultyInput2);
 
-    function submitForm(studentInfoForm) {
-        var formData = new FormData(document.forms[formName]);
-        fetch('https://script.google.com/macros/s/AKfycbwMZd2Z205V3Fpnh7Q742UmeHrMdxV_3D5gdQzFeA2XTOJ1a6rqXa847C3JLBmx3Ndklw/exec', {
-            method: 'POST',
-            body: formData
-        })
-        .then(response => response.json())
-        .then(data => {
-            // Handle the response data if needed
-            console.log(data);
-        })
-        .catch(error => {
-            console.error('Error:', error);
-        });
+function submitAllForms() {
+    var formData = new FormData();
+
+    // Gather data from the first form
+    formData.append('formType', 'studentInfoForm');
+    gatherFormData('studentInfoForm', formData);
+
+    // Gather data from the second form
+    formData.append('formType', 'subjectForm1');
+    gatherFormData('subjectForm1', formData);
+
+    // Gather data from the third form
+    formData.append('formType', 'subjectForm2');
+    gatherFormData('subjectForm2', formData);
+
+    // Gather data from the fourth form
+    formData.append('formType', 'studForm');
+    gatherFormData('studForm', formData);
+
+    // Send the data to the Google Sheets script
+    fetch('https://script.google.com/macros/s/AKfycbwMZd2Z205V3Fpnh7Q742UmeHrMdxV_3D5gdQzFeA2XTOJ1a6rqXa847C3JLBmx3Ndklw/exec', {
+        method: 'POST',
+        body: formData
+    })
+    .then(response => response.json())
+    .then(data => {
+        // Handle the response data if needed
+        console.log(data);
+    })
+    .catch(error => {
+        console.error('Error:', error);
+    });
+}
+
+function gatherFormData(formName, formData) {
+    var form = document.forms[formName];
+    var elements = form.elements;
+
+    for (var i = 0; i < elements.length; i++) {
+        var element = elements[i];
+        if (element.type !== 'submit') {
+            formData.append(element.name, element.value);
+        }
     }
+}

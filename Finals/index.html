@@ -46,15 +46,15 @@
                     <div class="studentinfo">
                         <img src="https://github.com/Zerooaa/Web-Dev-Project/blob/main/Images/Student_Info.png?raw=true" height="200">
                     </div>
-                    <form name="studentInfoForm" onsubmit="submitForm('studentInfoForm'); return false;">
+                    <form name="studentInfoForm" method="post" onsubmit="return false;">
                         <br>
                         <br>
                         <div class="fill-group1">
-                            <input type="text" id="branch" required>
+                            <input type="text" id="branch" name="Branch/Campus" required>
                             <label for="branch">Branch/Campus</label>
                         </div>
                         <div class="fill-group1">
-                            <input type="text" id="name" required>
+                            <input type="text" id="name" name="Student Name"required>
                             <label for="name">Student Name</label>
                         </div>
                         <div class="semGroup">
@@ -64,28 +64,27 @@
                         <br>
                         <div class="semcontainer">
                                 <label>
-                                    <input type="radio" id="1stSem" name="sem">
+                                    <input type="radio" value="1st Semester" name="Semester">
                                     <span><b>1st Semester</b></span>
                                 </label>
                                 <br>
                                 <label>
-                                    <input type="radio" id="2ndSem" name="sem">
+                                    <input type="radio" value="2nd Semester" name="Semester">
                                     <span><b>2nd Semester</b></span>
                                 </label>
                                 <br>
                                 <label>
-                                    <input type="radio" id="Summer" name="sem">
+                                    <input type="radio" value="Summer" name="Semester">
                                     <span><b>Summer</b></span>
                                 </label>
                         </div>
                         <br>
                         <br>
                         <div class="fill-group1">
-                            <textarea id="message" rows="8" required></textarea>
+                            <textarea id="message" rows="8" name="Reason" required></textarea>
                             <label for="message">Reason</label>
                         </div>
                         <button name="verify1" onclick="verifyForm1()">Verify</button> 
-                        <input type="submit" value="Submit Form" name="Submit">
                     </form>
                 </div>
             </div>
@@ -93,7 +92,7 @@
         <br>
         <div class="backgroundform2">
             <div class="container2">
-                <div class="form2" onsubmit="submitForm('subjectForm1'); return false;">
+                <div class="form2" method="post" onsubmit="return false;">
                     <div class="progress2">
                         <div id="progressBar2"></div>
                         <div class="progress-col2">Student Info</div>
@@ -105,28 +104,28 @@
                     </div>
                     <form name="subjectForm1">
                     <div class="fill-group2">
-                        <input type="text" id="subject1" required>
+                        <input type="text" id="subject1" name="Subject Code"required>
                         <label for="subject1">Subject Code</label>
                     </div>
                     <div class="fill-group2">
-                        <input type="text" id="cys1" required>
+                        <input type="text" id="cys1" name="Course, Year & Section"required>
                         <label for="cys1">Course, Year and Section</label>
                     </div>
                     <div class="fill-group2">
                         <br>
                         <p style="font-size: 120%; -webkit-text-fill-color: white;"><b>Date and Time:</b></p>
-                        <input type="datetime-local" id="dayandtime1" required>
+                        <input type="datetime-local" id="dayandtime1" name="Day and Time"required>
                     </div>
                     <div class="fill-group2">
-                        <input type="text" id="room1" required>
+                        <input type="text" id="room1" name="Room" required>
                         <label for="room1">Room</label>
                     </div>
                     <div class="fill-group2">
-                        <input type="text" id="units1" required>
+                        <input type="text" id="units1" name="Units"required>
                         <label for="units1">Units</label>
                     </div>
                     <div class="fill-group2">
-                        <input type="text" id="facultyname1" required>
+                        <input type="text" id="facultyname1" name="Faculty Name" required>
                         <label for="facultyname1">Faculty Name</label>
                     </div>
                     <button id="btnVerify" name="btnAdd1" onclick="verifyForm2()">Verify</button>
@@ -152,7 +151,7 @@
         <br>
         <div class="backgroundform3">
             <div class="container3">
-                <div class="form3" onsubmit="submitForm('subjectForm2'); return false;">
+                <div class="form3" method="post" onsubmit="return false;">
                     <div class="progress3">
                         <div id="progressBar3"></div>
                         <div class="progress-col3">Student Info</div>
@@ -162,30 +161,30 @@
                     <div class="formreleased">
                         <img src="https://github.com/Zerooaa/Web-Dev-Project/blob/main/Images/Accepted.png?raw=true" height="200">
                     </div>
-                    <form name="subjectForm2">
+                    <form name="subjectForm2" onsubmit="return false;">
                     <div class="fill-group3">
-                        <input type="text" id="subject2" required>
+                        <input type="text" id="subject2" name="Subject Code"required>
                         <label for="subject2">Subject Code</label>
                     </div>
                     <div class="fill-group3">
-                        <input type="text" id="cys2" required>
+                        <input type="text" id="cys2" name="Course, Year & Section"required>
                         <label for="cys2">Course, Year and Section</label>
                     </div>
                     <div class="fill-group3">
                         <br>
                         <p style="font-size: 120%; -webkit-text-fill-color: white;"><b>Date and Time:</b></p>
-                        <input type="datetime-local" id="dayandtime2" required>
+                        <input type="datetime-local" id="dayandtime2" name="Day and Time" required>
                     </div>
                     <div class="fill-group3">
-                        <input type="text" id="room2" required>
+                        <input type="text" id="room2" name="Room" required>
                         <label for="room2">Room</label>
                     </div>
                     <div class="fill-group3">
-                        <input type="text" id="units2" required>
+                        <input type="text" id="units2" name="Units" required>
                         <label for="units2">Units</label>
                     </div>
                     <div class="fill-group3">
-                        <input type="text" id="facultyname2" required>
+                        <input type="text" id="facultyname2" name="Faculty Name" required>
                         <label for="facultyname2">Faculty Name</label>
                     </div>
                     <button id="btnVerify" name="btnAdd2" onclick="verifyForm3()">Verify</button>
@@ -217,47 +216,45 @@
                     <div class="progress-col4">Subjects Released & Accepted</div>
                     <div class="progress-col4">Finalization</div>
                 </div>
-                <form class="studentform" name="studForm" onsubmit="submitForm('studForm'); return false;">
+                <form class="studentform" name="studForm" method="post" onsubmit="return false;">
                     <br>
                     <b>Number of Unit and Hours (Originally Enrolled) </b>
                     <br>
                     <b>based on Registration Certificate: </b>
                     <br>
-                    <input type="number" id="hoursenrolled" required>
+                    <input type="number" id="hoursenrolled" name="Original Number of Units and Hours" required>
                     <br>
                     <b>Number of Unit and Hours Added: </b>
                     <br>
-                    <input type="number" id="unitandhoursadded" required>
+                    <input type="number" id="unitandhoursadded" name="Number of Units and Hours Added" required>
                     <br>
                     <b>Total Number of Units and Hours Enrolled:</b>
                     <br>
-                    <input type="number" id="totalunitandhoursenrolled" required>
+                    <input type="number" id="totalunitandhoursenrolled" name="Total Number of Units and Hours Enrolled" required>
                     <br>
                     <b>Student Number: </b>
                     <br>
-                    <input type="text" id="studentnumber" required>
+                    <input type="text" id="studentnumber" name="Student Number" required>
                     <br>
-                    <b>Course: </b>
+                    <b>Course, Year & Section: </b>
                     <br>
-                    <input type="text" id="course" required>
+                    <input type="text" id="course" name="Course, Year & Section" required>
                     <br>
-                    <b>Year and Section:</b>
-                    <br>
-                    <input type="text" id="yrandsec" required>
+
                     <br>
                     <b>Email:</b>
                     <br>
-                    <input type="text" id="email" required>
+                    <input type="text" id="email" name="Email" required>
                     <br>
                     <br>
                     <b>Signature Over Printed Name of Student: </b>
                     <br>
                     <br>
-                    <input type="file" name="inputfile" id="fileinput" class="customfile" required>
+                    <input type="file" name="inputfile" id="fileinput" class="customfile" name="Signature"required>
                     <br>
                     <button id="btnVerify2" name="btnVerify2" onclick="verifyForm4()">Verify</button>
                 </form>
-                
+                <button onclick="submitAllForms()">Submit All Forms</button>
             <br>
             </div>
         </div>
