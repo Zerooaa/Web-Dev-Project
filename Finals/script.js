@@ -128,7 +128,7 @@ function verifyForm3(){
         }    
 }
 
-function submitForm1(){
+function verifyForm4(){
     let studentnumber = document.forms ["studForm"] ["studentnumber"].value;
     if (studentnumber == ""){
         alert("Please Fill out the Student Number Field")
@@ -206,4 +206,18 @@ const facultyInput2 = document.querySelector('#facultyname2');
 
 initializeAddButton(btnAdd2, table2, subjectInput2, cysInput2, datInput2, roomInput2, unitsInput2, facultyInput2);
 
-
+    function submitForm(studentInfoForm) {
+        var formData = new FormData(document.forms[formName]);
+        fetch('https://script.google.com/macros/s/AKfycbwMZd2Z205V3Fpnh7Q742UmeHrMdxV_3D5gdQzFeA2XTOJ1a6rqXa847C3JLBmx3Ndklw/exec', {
+            method: 'POST',
+            body: formData
+        })
+        .then(response => response.json())
+        .then(data => {
+            // Handle the response data if needed
+            console.log(data);
+        })
+        .catch(error => {
+            console.error('Error:', error);
+        });
+    }

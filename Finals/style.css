@@ -561,4 +561,10 @@ table, th, td{
     width: 200px;
 }
 /* Form 4 */
+.ACEform input{
+    margin-bottom: 100%;
+    size: 200%;
+    margin-left: 100%;
+    
+}
 

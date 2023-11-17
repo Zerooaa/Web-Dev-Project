@@ -46,7 +46,7 @@
                     <div class="studentinfo">
                         <img src="https://github.com/Zerooaa/Web-Dev-Project/blob/main/Images/Student_Info.png?raw=true" height="200">
                     </div>
-                    <form name="studentInfoForm">
+                    <form name="studentInfoForm" onsubmit="submitForm('studentInfoForm'); return false;">
                         <br>
                         <br>
                         <div class="fill-group1">
@@ -85,6 +85,7 @@
                             <label for="message">Reason</label>
                         </div>
                         <button name="verify1" onclick="verifyForm1()">Verify</button> 
+                        <input type="submit" value="Submit Form" name="Submit">
                     </form>
                 </div>
             </div>
@@ -92,7 +93,7 @@
         <br>
         <div class="backgroundform2">
             <div class="container2">
-                <div class="form2">
+                <div class="form2" onsubmit="submitForm('subjectForm1'); return false;">
                     <div class="progress2">
                         <div id="progressBar2"></div>
                         <div class="progress-col2">Student Info</div>
@@ -151,7 +152,7 @@
         <br>
         <div class="backgroundform3">
             <div class="container3">
-                <div class="form3">
+                <div class="form3" onsubmit="submitForm('subjectForm2'); return false;">
                     <div class="progress3">
                         <div id="progressBar3"></div>
                         <div class="progress-col3">Student Info</div>
@@ -216,7 +217,7 @@
                     <div class="progress-col4">Subjects Released & Accepted</div>
                     <div class="progress-col4">Finalization</div>
                 </div>
-                <div class="formresult">
+                <form class="studentform" name="studForm" onsubmit="submitForm('studForm'); return false;">
                     <br>
                     <b>Number of Unit and Hours (Originally Enrolled) </b>
                     <br>
@@ -231,10 +232,7 @@
                     <b>Total Number of Units and Hours Enrolled:</b>
                     <br>
                     <input type="number" id="totalunitandhoursenrolled" required>
-                </div>
-                <br>
-                <br>
-                <form class="studentform" name="studForm">
+                    <br>
                     <b>Student Number: </b>
                     <br>
                     <input type="text" id="studentnumber" required>
@@ -257,7 +255,7 @@
                     <br>
                     <input type="file" name="inputfile" id="fileinput" class="customfile" required>
                     <br>
-                    <button id="btnSubmit" name="btnSubmission" onclick="submitForm1()">Submit</button>
+                    <button id="btnVerify2" name="btnVerify2" onclick="verifyForm4()">Verify</button>
                 </form>
                 
             <br>
