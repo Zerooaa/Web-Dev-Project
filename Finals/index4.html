@@ -7,56 +7,69 @@
     <title>Application for Change of Enrollment(ACE) Form</title>
 </head>
 <body>
-    <div class="backgroundform4">
-        <div class="form4">
-            <div class="progress4">
-                <div id="progressBar4"></div>
-                <div class="progress-col4">Student Info</div>
-                <div class="progress-col4">Subjects Released & Accepted</div>
-                <div class="progress-col4">Finalization</div>
-            </div>
-            <form class="studentform" name="studForm" method="post" onsubmit="return false;">
-                <br>
-                <b>Number of Unit and Hours (Originally Enrolled) </b>
-                <br>
-                <b>based on Registration Certificate: </b>
-                <br>
-                <input type="number" id="hoursenrolled" name="Original Number of Units and Hours" required>
-                <br>
-                <b>Number of Unit and Hours Added: </b>
-                <br>
-                <input type="number" id="unitandhoursadded" name="Number of Units and Hours Added" required>
-                <br>
-                <b>Total Number of Units and Hours Enrolled:</b>
-                <br>
-                <input type="number" id="totalunitandhoursenrolled" name="Total Number of Units and Hours Enrolled" required>
-                <br>
-                <b>Student Number: </b>
-                <br>
-                <input type="text" id="studentnumber" name="Student Number" required>
-                <br>
-                <b>Course, Year & Section: </b>
-                <br>
-                <input type="text" id="course" name="Course, Year & Section" required>
-                <br>
-
-                <br>
-                <b>Email:</b>
-                <br>
-                <input type="text" id="email" name="Email" required>
-                <br>
-                <br>
-                <b>Signature Over Printed Name of Student: </b>
-                <br>
-                <br>
-                <input type="file" name="inputfile" id="fileinput" class="customfile" name="Signature"required>
-                <br>
-                <button id="btnVerify2" name="btnVerify2" onclick="verifyForm4()">Verify</button>
-            </form>
-            <button onclick="submitAllForms()">Submit All Forms</button>
-        <br>
+    <div class="background1">
+        <div style="text-align: center;">
+            <br>
+            <b style="-webkit-text-fill-color:rgb(255, 255, 255); font-size: 90%">REPUBLIC OF THE PHILIPPINES</b>
+            <br>
+            <b style="-webkit-text-fill-color:rgb(255, 255, 255); font-size: 130%">POLYTECHNIC UNIVERSITY OF THE PHILIPPINES</b>
+            <br>
+            <b style="-webkit-text-fill-color:rgb(255, 255, 255);">OFFICE OF THE BRANCH/CAMPUS REGISTRAR</b>
+            <br>
+            <br>
+            <img src="https://github.com/Zerooaa/Web-Dev-Project/blob/main/Images/PUP%20LOGO.png?raw=true" height="150" width="150">
         </div>
-        <script src="script.js"></script>
+        <div class="backgroundform4">
+            <div class="form4">
+                <div class="progress4">
+                    <div id="progressBar4"></div>
+                    <div class="progress-col4">Student Info</div>
+                    <div class="progress-col4">Subjects Released & Accepted</div>
+                    <div class="progress-col4">Finalization</div>
+                </div>
+                <form class="studentform" name="studForm" method="post" action="https://script.google.com/macros/s/AKfycbw1R0epaHBIFhAnFLkMinX2zTpEkti5g2Lk3dxHH1pqEqohYlgtzgJ47MA1BSiwJ0Nq/exec">
+                    <br>
+                    <b>Number of Unit and Hours (Originally Enrolled) </b>
+                    <br>
+                    <b>based on Registration Certificate: </b>
+                    <br>
+                    <input type="number" id="hoursenrolled" name="Original Number of Units and Hours" required>
+                    <br>
+                    <b>Number of Unit and Hours Added: </b>
+                    <br>
+                    <input type="number" id="unitandhoursadded" name="Number of Units and Hours Added" required>
+                    <br>
+                    <b>Total Number of Units and Hours Enrolled:</b>
+                    <br>
+                    <input type="number" id="totalunitandhoursenrolled" name="Total Number of Units and Hours Enrolled" required>
+                    <br>
+                    <b>Student Number: </b>
+                    <br>
+                    <input type="text" id="studentnumber" name="Student Number" required>
+                    <br>
+                    <b>Course, Year & Section: </b>
+                    <br>
+                    <input type="text" id="course" name="CYS" required>
+                    <br>
+
+                    <br>
+                    <b>Email:</b>
+                    <br>
+                    <input type="text" id="email" name="Email" required>
+                    <br>
+                    <br>
+                    <b>Signature Over Printed Name of Student: </b>
+                    <br>
+                    <br>
+                    <input type="file" name="inputfile" id="fileinput" class="customfile" name="Signature"required>
+                    <br>
+                    <br>
+                    <input type="submit">
+                </form>
+            <br>
+            </div>
+            <script src="script.js"></script>
+        </div>
     </div>
 </body>
 </html>
