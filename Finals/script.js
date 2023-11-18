@@ -78,13 +78,6 @@ function verifyForm2(){
 const btn3 = document.getElementById("btnAdd2");
 btn3.disabled=true;
 
-const input1 = document.getElementById("hoursenrolled");
-input1.disabled=true;
-const input2 = document.getElementById("unitandhoursadded");
-input2.disabled=true;
-const input3 = document.getElementById("totalunitandhoursenrolled");
-input3.disabled=true;
-
 function verifyForm3(){
     event.preventDefault();
 
@@ -251,3 +244,4 @@ function gatherFormData(formName, formData) {
         }
     }
 }
+
