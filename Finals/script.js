@@ -42,15 +42,3 @@ const unitsInput1 = document.querySelector('#units1');
 const facultyInput1 = document.querySelector('#facultyname1');
 
 initializeAddButton(btnAdd1, table1, subjectInput1, cysInput1, dayInput1, timeInput1, roomInput1, unitsInput1, facultyInput1);
-
-const btnAdd2 = document.querySelector('#btnAdd2');
-const table2 = document.querySelector('#table2');
-const subjectInput2 = document.querySelector('#subject2');
-const cysInput2 = document.querySelector('#cys2');
-const dayInput2 = document.querySelector('#day2');
-const timeInput2 = document.querySelector('#time2');
-const roomInput2 = document.querySelector('#room2');
-const unitsInput2 = document.querySelector('#units2');
-const facultyInput2 = document.querySelector('#facultyname2');
-
-initializeAddButton(btnAdd2, table2, subjectInput2, cysInput2, dayInput2, timeInput2, roomInput2, unitsInput2, facultyInput2);

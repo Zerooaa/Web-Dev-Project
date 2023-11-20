@@ -28,7 +28,7 @@
                         <div class="progress-col3">Subjects Released & Accepted</div>
                         <div class="progress-col3">Finalization</div>
                     </div>
-                    <div class="formreleased">
+                    <div class="formaccepted">
                         <img src="https://github.com/Zerooaa/Web-Dev-Project/blob/main/Images/Accepted.png?raw=true" height="200">
                     </div>
                     <form name="subjectForm2" target="iframe" method="post" action="https://script.google.com/macros/s/AKfycbxn_r3MQ2USmgh4mvVrr1762Wxuqce7tJj425UsI2Dlj3rv4XkSYxb0FJOQBDl3W1iA/exec">
@@ -42,7 +42,7 @@
                         </div>
                         <div class="fill-group3">
                             <input type="text" id="day2" name="A.Day" required>
-                            <label for="day2">Date</label>
+                            <label for="day2">Day</label>
                         </div>
                         <div class="fill-group3">
                             <input type="text" id="time2" name="A.Time" required>
@@ -70,12 +70,12 @@
                 </div>
                 <br>
                 <br>
-                <div class="tableforreleased" style="-webkit-text-fill-color: black;">
+                <div class="tableforaccepted" style="-webkit-text-fill-color: black;">
                     <table id="table2">
                         <tr>
                             <th width="15%">Subject Code</th>
                             <th width="15%">Course, Year, and Section</th>
-                            <th width="10%">Date</th>
+                            <th width="10%">Day</th>
                             <th width="10%">Time</th>
                             <th width="10%">Room</th>
                             <th width="10%">Units</th>
@@ -84,7 +84,52 @@
                     </table>
                 </div>
             </div>
-            <script src="script.js"></script>
+            <script>
+                function initializeAddButton(btn, table, subjectInput, cysInput, dayInput, timeInput, roomInput, unitsInput, facultyInput) {
+                btn.addEventListener('click', (event) => {
+                    event.preventDefault();
+                    let subject = subjectInput.value;
+                    let cys = cysInput.value;
+                    let day = dayInput.value;
+                    let time = timeInput.value;
+                    let room = roomInput.value;
+                    let units = unitsInput.value;
+                    let facultyname = facultyInput.value;
+
+                    let template = `
+                        <tr>
+                            <td>${subject}</td>
+                            <td>${cys}</td>
+                            <td>${day}</td>
+                            <td>${time}</td>
+                            <td>${room}</td>
+                            <td>${units}</td>
+                            <td>${facultyname}</td>
+                        </tr>`;
+                    table.innerHTML += template;
+
+                    clearFields([subjectInput, cysInput, dayInput, timeInput, roomInput, unitsInput, facultyInput]);
+                });
+                }
+
+            function clearFields(inputs) {
+                for (var i = 0; i < inputs.length; i++) {
+                    inputs[i].value = '';
+                }
+                }
+            
+                const btnAdd2 = document.querySelector('#btnAdd2');
+                const table2 = document.querySelector('#table2');
+                const subjectInput2 = document.querySelector('#subject2');
+                const cysInput2 = document.querySelector('#cys2');
+                const dayInput2 = document.querySelector('#day2');
+                const timeInput2 = document.querySelector('#time2');
+                const roomInput2 = document.querySelector('#room2');
+                const unitsInput2 = document.querySelector('#units2');
+                const facultyInput2 = document.querySelector('#facultyname2');
+
+                initializeAddButton(btnAdd2, table2, subjectInput2, cysInput2, dayInput2, timeInput2, roomInput2, unitsInput2, facultyInput2);
+            </script>
         </div>
     </div>
 </body>
