@@ -46,7 +46,7 @@
                     <div class="studentinfo">
                         <img src="https://github.com/Zerooaa/Web-Dev-Project/blob/main/Images/Student_Info.png?raw=true" height="200">
                     </div>
-                    <form name="studentInfoForm"  method="post" action="https://script.google.com/macros/s/AKfycbz_xSpwJVM1RzoL91OPrGdyfuAcnGyQ4pB3Md_fDG_Enk87DqK7UPhWtiYpRJPpoSRL/exec">
+                    <form name="studentInfoForm"  target="iframe" method="post" action="https://script.google.com/macros/s/AKfycby9D6AXnTqOBo1tHPObKzhbbf7zsmcSOkd3ShBghvcBvsRCkXvPgyraB62chpo8JU-w/exec">
                         <br>
                         <br>
                         <div class="fill-group1">
@@ -84,11 +84,12 @@
                             <textarea id="message" rows="8" name="Reason" required></textarea>
                             <label for="message">Reason</label>
                         </div>
-                        <input type="submit" onclick=dontReload()>
+                        <input type="submit">
                         <br>
                         <br>
                         <a href="index2.html"><b style="-webkit-text-fill-color: white; font-size: 200%;">Next</b></a>
                     </form>
+                    <iframe name="iframe" style="position: absolute; visibility: hidden"></iframe>
                 </div>
             </div>
         </div>
