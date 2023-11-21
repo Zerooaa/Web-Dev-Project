@@ -7,7 +7,7 @@
 
 .background1{
     width: 100vw;
-    height: 100vh;
+    height: 180vh;
     display: table;
     background-size: cover;
     background-position: center;
@@ -54,7 +54,7 @@
     background-color: maroon;
     opacity: 0.8;
     border: 1px solid black;
-    height: 950px;
+    height: 1000px;
     width: 1000px;
     margin: auto;
     margin-top: 15px;
@@ -215,8 +215,8 @@ textarea:valid~label{
     font-size: 120%;
     display: block;
     margin: auto;
-    margin-top: 2%;
-    margin-left: 39%;
+    margin-top: 1px;
+    margin-left: 40%;
     width: 200px;
 }
 
@@ -233,7 +233,7 @@ textarea:valid~label{
     background-color: maroon;
     opacity: 0.8;
     border: 1px solid black;
-    height: 900px;
+    height: 1000px;
     width: 1000px;
     margin: auto;
     margin-top: 10px;
@@ -270,6 +270,22 @@ textarea:valid~label{
     font-size: 20px;
     resize: none;
 }
+
+.form2 input[type="submit"]{
+    padding: 10px 0;
+    color: rgb(0, 0, 0);
+    outline: none;
+    border: 1px solid rgb(0, 0, 0);
+    width: 50%;
+    cursor: pointer;
+    font-size: 120%;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    margin-left: 40%;
+    width: 200px;
+}
+
 
 .fill-group2 input{
     margin-top: 27px;
@@ -332,8 +348,8 @@ textarea:valid~label{
     font-size: 120%;
     display: block;
     margin: auto;
-    margin-top: 2%;
-    margin-left: 39%;
+    margin-top: 10px;
+    margin-left: 40%;
     width: 200px;
 }
 /* Form 2 */
@@ -346,9 +362,10 @@ textarea:valid~label{
     background-color: maroon;
     opacity: 0.8;
     border: 1px solid black;
-    height: 900px;
+    height: 1000px;
     width: 1000px;
     margin: auto;
+    margin-top: 10px;
 }
 .form3{
     text-align: center;
@@ -370,6 +387,21 @@ textarea:valid~label{
     transition: 0.2s;
     margin-left: 15%;
     margin-top: 30px;
+}
+
+.form3 input[type="submit"]{
+    padding: 10px 0;
+    color: rgb(0, 0, 0);
+    outline: none;
+    border: 1px solid rgb(0, 0, 0);
+    width: 50%;
+    cursor: pointer;
+    font-size: 120%;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    margin-left: 40%;
+    width: 200px;
 }
 
 .form3 input, textarea{
@@ -444,8 +476,8 @@ textarea:valid~label{
     font-size: 120%;
     display: block;
     margin: auto;
-    margin-top: 2%;
-    margin-left: 39%;
+    margin-top: 10px;
+    margin-left: 40%;
     width: 200px;
 }
 
@@ -480,6 +512,22 @@ table, th, td{
     width: 1000px;
     margin: auto;
 }
+
+.form4 input[type="submit"]{
+    padding: 10px 0;
+    color: rgb(0, 0, 0);
+    outline: none;
+    border: 1px solid rgb(0, 0, 0);
+    width: 50%;
+    cursor: pointer;
+    font-size: 120%;
+    display: block;
+    margin: auto;
+    margin-top: 25px;
+    margin-left: 40%;
+    width: 200px;
+}
+
 .formresult{
     font-size: 120%;
     word-spacing: 5%;
@@ -561,3 +609,8 @@ table, th, td{
     width: 200px;
 }
 /* Form 4 */
+
+/* Every Form */
+
+
+
