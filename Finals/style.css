@@ -214,12 +214,22 @@ textarea:valid~label{
     cursor: pointer;
     font-size: 120%;
     display: block;
-    margin: auto;
-    margin-top: 1px;
     margin-left: 40%;
     width: 200px;
 }
 
+.form1 input[type="submit"]{
+    padding: 10px 0;
+    color: rgb(0, 0, 0);
+    outline: none;
+    border: 1px solid rgb(0, 0, 0);
+    width: 50%;
+    cursor: pointer;
+    font-size: 120%;
+    display: block;
+    margin-left: 40%;
+    width: 200px;
+}
 /* Form 1 */
 
 
@@ -233,7 +243,7 @@ textarea:valid~label{
     background-color: maroon;
     opacity: 0.8;
     border: 1px solid black;
-    height: 1000px;
+    height: 1080px;
     width: 1000px;
     margin: auto;
     margin-top: 10px;
@@ -339,19 +349,42 @@ textarea:valid~label{
     border-left: 20px solid yellow;
 }
 .form2 button{
-    padding: 10px 0;
     color: rgb(0, 0, 0);
     outline: none;
     border: 1px solid rgb(0, 0, 0);
     width: 50%;
     cursor: pointer;
     font-size: 120%;
+    
+}
+
+#btnAdd1{
     display: block;
     margin: auto;
     margin-top: 10px;
     margin-left: 40%;
+    padding: 10px 0;
     width: 200px;
 }
+
+#btnnext{
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    margin-left: 40%;
+    padding: 10px 0;
+    width: 200px;
+}
+
+#btnback{
+    padding: 5px 0;
+    margin-left: -85%;
+    margin-bottom: -150%;
+    width: 100px;
+}
+
+
+
 /* Form 2 */
 
 /* -------------------------------- */
@@ -362,7 +395,7 @@ textarea:valid~label{
     background-color: maroon;
     opacity: 0.8;
     border: 1px solid black;
-    height: 1000px;
+    height: 1080px;
     width: 1000px;
     margin: auto;
     margin-top: 10px;
@@ -467,18 +500,38 @@ textarea:valid~label{
 }
 
 .form3 button{
-    padding: 10px 0;
     color: rgb(0, 0, 0);
     outline: none;
     border: 1px solid rgb(0, 0, 0);
     width: 50%;
     cursor: pointer;
     font-size: 120%;
+    
+}
+
+#btnAdd2{
     display: block;
     margin: auto;
     margin-top: 10px;
     margin-left: 40%;
+    padding: 10px 0;
     width: 200px;
+}
+
+#btnnext{
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    margin-left: 40%;
+    padding: 10px 0;
+    width: 200px;
+}
+
+#btnback{
+    padding: 5px 0;
+    margin-left: -85%;
+    margin-bottom: -150%;
+    width: 100px;
 }
 
 table, th, td{
@@ -595,18 +648,38 @@ table, th, td{
     border-left: 20px solid yellow;
 }
 .form4 button{
-    padding: 10px 0;
     color: rgb(0, 0, 0);
     outline: none;
     border: 1px solid rgb(0, 0, 0);
     width: 50%;
     cursor: pointer;
     font-size: 120%;
+    
+}
+
+#btnAdd2{
     display: block;
     margin: auto;
-    margin-top: 2%;
-    margin-left: 39%;
+    margin-top: 10px;
+    margin-left: 40%;
+    padding: 10px 0;
     width: 200px;
+}
+
+#btnnext{
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    margin-left: 40%;
+    padding: 10px 0;
+    width: 200px;
+}
+
+#btnback{
+    padding: 5px 0;
+    margin-left: -85%;
+    margin-bottom: -150%;
+    width: 100px;
 }
 /* Form 4 */
 

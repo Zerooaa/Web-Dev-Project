@@ -23,30 +23,28 @@ function initializeAddButton(btn, table, subjectInput, cysInput, dayInput, timeI
 
         clearFields([subjectInput, cysInput, dayInput, timeInput, roomInput, unitsInput, facultyInput]);
     });
-}
+    }
 
 function clearFields(inputs) {
     for (var i = 0; i < inputs.length; i++) {
         inputs[i].value = '';
     }
-}
+    }
 
-const btnAdd1 = document.querySelector('#btnAdd1');
-const table1 = document.querySelector('#table1');
-const subjectInput1 = document.querySelector('#subject1');
-const cysInput1 = document.querySelector('#cys1');
-const dayInput1 = document.querySelector('#day1');
-const timeInput1 = document.querySelector('#time1');
-const roomInput1 = document.querySelector('#room1');
-const unitsInput1 = document.querySelector('#units1');
-const facultyInput1 = document.querySelector('#facultyname1');
+    const btnAdd2 = document.querySelector('#btnAdd2');
+    const table2 = document.querySelector('#table2');
+    const subjectInput2 = document.querySelector('#subject2');
+    const cysInput2 = document.querySelector('#cys2');
+    const dayInput2 = document.querySelector('#day2');
+    const timeInput2 = document.querySelector('#time2');
+    const roomInput2 = document.querySelector('#room2');
+    const unitsInput2 = document.querySelector('#units2');
+    const facultyInput2 = document.querySelector('#facultyname2');
 
-initializeAddButton(btnAdd1, table1, subjectInput1, cysInput1, dayInput1, timeInput1, roomInput1, unitsInput1, facultyInput1);
+    initializeAddButton(btnAdd2, table2, subjectInput2, cysInput2, dayInput2, timeInput2, roomInput2, unitsInput2, facultyInput2);
 
-
-document.getElementById('myForm1').addEventListener('submit', function (event) {
+    document.getElementById('myForm2').addEventListener('submit', function (event) {
     event.preventDefault();
-    
-    alert('Data has been submitted!');
-});
 
+    alert('Data has been submitted!');
+    });

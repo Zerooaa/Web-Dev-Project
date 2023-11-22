@@ -27,7 +27,9 @@
                     <div class="progress-col4">Subjects Released & Accepted</div>
                     <div class="progress-col4">Finalization</div>
                 </div>
-                <form class="studentform" name="studForm" target="iframe" method="post" action="https://script.google.com/macros/s/AKfycbxn_r3MQ2USmgh4mvVrr1762Wxuqce7tJj425UsI2Dlj3rv4XkSYxb0FJOQBDl3W1iA/exec">
+                <br>
+                <button id="btnback" type="button" onclick="location.href='index3.html'">Back</button>
+                <form id="myForm3" class="studentform" name="studForm" target="iframe" method="post" action="https://script.google.com/macros/s/AKfycbxn_r3MQ2USmgh4mvVrr1762Wxuqce7tJj425UsI2Dlj3rv4XkSYxb0FJOQBDl3W1iA/exec">
                     <br>
                     <b>Number of Unit and Hours (Originally Enrolled) </b>
                     <br>
@@ -51,7 +53,6 @@
                     <br>
                     <input type="text" id="course" name="CYS" required>
                     <br>
-
                     <br>
                     <b>Email:</b>
                     <br>
@@ -69,7 +70,13 @@
                 <iframe name="iframe" style="position: absolute; visibility: hidden"></iframe>
             <br>
             </div>
-            <script src="script.js"></script>
+            <script>
+                document.getElementById('myForm3').addEventListener('submit', function (event) {
+                event.preventDefault();
+    
+                alert('Data has been submitted!');
+                });
+            </script>
         </div>
     </div>
 </body>

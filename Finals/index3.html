@@ -28,10 +28,12 @@
                         <div class="progress-col3">Subjects Released & Accepted</div>
                         <div class="progress-col3">Finalization</div>
                     </div>
-                    <div class="formaccepted">
+                    <br>
+                    <button id="btnback" type="button" onclick="location.href='index2.html'">Back</button>
+                    <div class="formaccepted">  
                         <img src="https://github.com/Zerooaa/Web-Dev-Project/blob/main/Images/Accepted.png?raw=true" height="200">
                     </div>
-                    <form id="myForm2" name="subjectForm2" target="iframe" method="post" action="https://script.google.com/macros/s/AKfycbxn_r3MQ2USmgh4mvVrr1762Wxuqce7tJj425UsI2Dlj3rv4XkSYxb0FJOQBDl3W1iA/exec">
+                        <form id="myForm2" name="subjectForm2" target="iframe" method="post" action="https://script.google.com/macros/s/AKfycbxn_r3MQ2USmgh4mvVrr1762Wxuqce7tJj425UsI2Dlj3rv4XkSYxb0FJOQBDl3W1iA/exec">
                         <div class="fill-group3">
                             <input type="text" id="subject2" name="A.Subject Code"required>
                             <label for="subject2">Subject Code</label>
@@ -60,12 +62,13 @@
                             <input type="text" id="facultyname2" name="A.Faculty Name" required>
                             <label for="facultyname2">Faculty Name</label>
                         </div>
+                        <br>
                         <input type="submit">
                         <br>
                         <button id="btnAdd2">Add Data</button>
                         <br>
-                        <button type="button" onclick="location.href='index4.html'">Next</button>
-                    </form>
+                        <button type="button" id="btnnext" onclick="location.href='index4.html'">Next</button>
+                        </form>
                     <iframe name="iframe" style="position: absolute; visibility: hidden"></iframe>
                 </div>
                 <br>
@@ -84,52 +87,7 @@
                     </table>
                 </div>
             </div>
-            <script>
-                function initializeAddButton(btn, table, subjectInput, cysInput, dayInput, timeInput, roomInput, unitsInput, facultyInput) {
-                btn.addEventListener('click', (event) => {
-                    event.preventDefault();
-                    let subject = subjectInput.value;
-                    let cys = cysInput.value;
-                    let day = dayInput.value;
-                    let time = timeInput.value;
-                    let room = roomInput.value;
-                    let units = unitsInput.value;
-                    let facultyname = facultyInput.value;
-
-                    let template = `
-                        <tr>
-                            <td>${subject}</td>
-                            <td>${cys}</td>
-                            <td>${day}</td>
-                            <td>${time}</td>
-                            <td>${room}</td>
-                            <td>${units}</td>
-                            <td>${facultyname}</td>
-                        </tr>`;
-                    table.innerHTML += template;
-
-                    clearFields([subjectInput, cysInput, dayInput, timeInput, roomInput, unitsInput, facultyInput]);
-                });
-                }
-
-            function clearFields(inputs) {
-                for (var i = 0; i < inputs.length; i++) {
-                    inputs[i].value = '';
-                }
-                }
-            
-                const btnAdd2 = document.querySelector('#btnAdd2');
-                const table2 = document.querySelector('#table2');
-                const subjectInput2 = document.querySelector('#subject2');
-                const cysInput2 = document.querySelector('#cys2');
-                const dayInput2 = document.querySelector('#day2');
-                const timeInput2 = document.querySelector('#time2');
-                const roomInput2 = document.querySelector('#room2');
-                const unitsInput2 = document.querySelector('#units2');
-                const facultyInput2 = document.querySelector('#facultyname2');
-
-                initializeAddButton(btnAdd2, table2, subjectInput2, cysInput2, dayInput2, timeInput2, roomInput2, unitsInput2, facultyInput2);
-            </script>
+            <script src="script2.js"></script>
         </div>
     </div>
 </body>
