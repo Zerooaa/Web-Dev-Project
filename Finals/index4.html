@@ -29,7 +29,7 @@
                 </div>
                 <br>
                 <button id="btnback" type="button" onclick="location.href='index3.html'">Back</button>
-                <form id="myForm3" class="studentform" name="studForm" target="iframe" method="post" action="https://script.google.com/macros/s/AKfycbxn_r3MQ2USmgh4mvVrr1762Wxuqce7tJj425UsI2Dlj3rv4XkSYxb0FJOQBDl3W1iA/exec">
+                <form onsubmit=showAlert() class="studentform" name="studForm" target="iframe" method="post" action="https://script.google.com/macros/s/AKfycbxn_r3MQ2USmgh4mvVrr1762Wxuqce7tJj425UsI2Dlj3rv4XkSYxb0FJOQBDl3W1iA/exec">
                     <br>
                     <b>Number of Unit and Hours (Originally Enrolled) </b>
                     <br>
@@ -71,11 +71,9 @@
             <br>
             </div>
             <script>
-                document.getElementById('myForm3').addEventListener('submit', function (event) {
-                event.preventDefault();
-    
-                alert('Data has been submitted!');
-                });
+                function showAlert() {
+                    alert("Form submitted!");
+                }
             </script>
         </div>
     </div>
