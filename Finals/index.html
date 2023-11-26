@@ -46,7 +46,7 @@
                     <div class="studentinfo">
                         <img src="https://github.com/Zerooaa/Web-Dev-Project/blob/main/Images/Student_Info.png?raw=true" height="200">
                     </div>
-                    <form name="studentInfoForm"  target="iframe" method="post" action="https://script.google.com/macros/s/AKfycby9D6AXnTqOBo1tHPObKzhbbf7zsmcSOkd3ShBghvcBvsRCkXvPgyraB62chpo8JU-w/exec">
+                    <form id="myForm4" name="studentInfoForm"  target="iframe" method="post" action="https://script.google.com/macros/s/AKfycby9D6AXnTqOBo1tHPObKzhbbf7zsmcSOkd3ShBghvcBvsRCkXvPgyraB62chpo8JU-w/exec">
                         <br>
                         <br>
                         <div class="fill-group1">
@@ -93,7 +93,13 @@
             </div>
         </div>
         <br>
-    <script src="script.js"></script>
+    <script>
+        document.getElementById('myForm4').addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        alert('Data has been submitted!');
+        });
+    </script>
 </div>
 </body>
 </html>
