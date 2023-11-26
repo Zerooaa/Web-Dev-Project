@@ -43,8 +43,6 @@ function clearFields(inputs) {
 
     initializeAddButton(btnAdd2, table2, subjectInput2, cysInput2, dayInput2, timeInput2, roomInput2, unitsInput2, facultyInput2);
 
-    document.getElementById('myForm2').addEventListener('submit', function (event) {
-    event.preventDefault();
-
-    alert('Data has been submitted!');
-    });
+function showAlert() {
+    alert("Form submitted!");
+}

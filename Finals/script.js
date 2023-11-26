@@ -44,9 +44,6 @@ const facultyInput1 = document.querySelector('#facultyname1');
 initializeAddButton(btnAdd1, table1, subjectInput1, cysInput1, dayInput1, timeInput1, roomInput1, unitsInput1, facultyInput1);
 
 
-document.getElementById('myForm1').addEventListener('submit', function (event) {
-    event.preventDefault();
-    
-    alert('Data has been submitted!');
-});
-
+function showAlert() {
+    alert("Form submitted!");
+}
