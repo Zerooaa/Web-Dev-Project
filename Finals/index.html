@@ -2,104 +2,92 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="style2.css" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Application for Change of Enrollment(ACE) Form</title>
 </head>
 <body>
     <div class="background1">
-    <div style="text-align: center;">
-        <br>
-        <b style="-webkit-text-fill-color:rgb(255, 255, 255); font-size: 90%">REPUBLIC OF THE PHILIPPINES</b>
-        <br>
-        <b style="-webkit-text-fill-color:rgb(255, 255, 255); font-size: 130%">POLYTECHNIC UNIVERSITY OF THE PHILIPPINES</b>
-        <br>
-        <b style="-webkit-text-fill-color:rgb(255, 255, 255);">OFFICE OF THE BRANCH/CAMPUS REGISTRAR</b>
-        <br>
-        <br>
-        <img src="https://github.com/Zerooaa/Web-Dev-Project/blob/main/Images/PUP%20LOGO.png?raw=true" height="150" width="150">
-    </div>
-    <br>
-    <br>
-    <div class="instructions">
-        <br>
-        <p style="-webkit-text-fill-color: white; text-align: center;">Application for Change of Enrollment(ACE) Form</p>
-        <br>
-        <p style="-webkit-text-fill-color: white;">1. Fill-out all blank spaces provided in this form with appropriate information, write <b>N/A</b> if not applicable</p>
-        <p style="-webkit-text-fill-color: white;">2. Write the details of subject to change in the <b>RELEASED</b> and <b>ACCEPTED</b> section and have it signed by the faculty handling respectively.</p>
-        <p style="-webkit-text-fill-color: white;">(In case the professor has not yet attended the class, the Branch/Campus Academic Head may sign in lieu of the professor in order to avoid delay in processing of adjustment.)</p>
-        <p style="-webkit-text-fill-color: white;">3. Proceed to your Branch/Campus Academic Head for <b>APPROVAL</b> and <b>TAGGING</b> of the necessary changes. (After tagging, open your SIS Account to check if the necessary changes were done and correct.)</p>
-        <p style="-webkit-text-fill-color: white;">4. Go to the Accounting Student Services (of your Branch/Campus) for the assessment and tagging of necessary fee/s.</p>
-        <p style="-webkit-text-fill-color: white;">5. Pay the assessed fee at the SIS Window in the Branch/Campus Cashier's Office.</p>
-        <p style="-webkit-text-fill-color: white;">6. Photocopy this form and official receipt and submit copy to Office of the Branch/Campus Registrar (Original Copy), Director's Office (photocopy), and keep a personal copy.</p>
-        <br>
-    </div>
-        <div class="backgroundform1">
-            <div class="container1">
-                <div class="form1">
-                    <div class="progress1">
-                        <div id="progressBar1"></div>
-                        <div class="progress-col1">Student Info</div>
-                        <div class="progress-col1">Subjects Released & Accepted</div>
-                        <div class="progress-col1">Finalization</div>
-                    </div>
-                    <div class="studentinfo">
-                        <img src="https://github.com/Zerooaa/Web-Dev-Project/blob/main/Images/Student_Info.png?raw=true" height="200">
-                    </div>
-                    <form id="myForm4" name="studentInfoForm"  target="iframe" method="post" action="https://script.google.com/macros/s/AKfycby9D6AXnTqOBo1tHPObKzhbbf7zsmcSOkd3ShBghvcBvsRCkXvPgyraB62chpo8JU-w/exec">
-                        <br>
-                        <br>
-                        <div class="fill-group1">
-                            <input type="text" id="branch" name="Branch/Campus" required>
-                            <label for="branch">Branch/Campus</label>
-                        </div>
-                        <div class="fill-group1">
-                            <input type="text" id="name" name="Student Name"required>
-                            <label for="name">Student Name</label>
-                        </div>
-                        <div class="semGroup">
-                            <b style="font-size: 150%;">Semester:</b>
-                            <br>
-                        </div>
-                        <br>
-                        <div class="semcontainer">
-                                <label>
-                                    <input type="radio" value="1st Semester" name="Semester">
-                                    <span><b>1st Semester</b></span>
-                                </label>
-                                <br>
-                                <label>
-                                    <input type="radio" value="2nd Semester" name="Semester">
-                                    <span><b>2nd Semester</b></span>
-                                </label>
-                                <br>
-                                <label>
-                                    <input type="radio" value="Summer" name="Semester">
-                                    <span><b>Summer</b></span>
-                                </label>
-                        </div>
-                        <br>
-                        <br>
-                        <div class="fill-group1">
-                            <textarea id="message" rows="8" name="Reason" required></textarea>
-                            <label for="message">Reason</label>
-                        </div>
-                        <input type="submit">
-                        <br>
-                        <button type="button" onclick="location.href='index2.html'">Next</button>
-                    </form>
-                    <iframe name="iframe" style="position: absolute; visibility: hidden"></iframe>
+        <div class="Logo">
+            <div class="backgroundwelcome">
+                <br>
+                <br>
+                <br>
+                <b style="-webkit-text-fill-color:rgb(255, 255, 255); font-size: 90%">REPUBLIC OF THE PHILIPPINES</b>
+                <br>
+                <b style="-webkit-text-fill-color:rgb(255, 255, 255); font-size: 130%">POLYTECHNIC UNIVERSITY OF THE PHILIPPINES</b>
+                <br>
+                <b style="-webkit-text-fill-color:rgb(255, 255, 255);">OFFICE OF THE BRANCH/CAMPUS REGISTRAR</b>
+                <br>
+                <br>
+                <img src="https://github.com/Zerooaa/Web-Dev-Project/blob/main/Images/PUP%20LOGO.png?raw=true" height="150" width="150">
+                <br>
+                <br>
+                <div class="Text">
+                    <section>
+                        <h1><b style="-webkit-text-fill-color: white; font-size: 150%;">Welcome to PUP</b></h1>
+                        <h2><b style="-webkit-text-fill-color: white; font-size: 100%;">Application for Change of Enrollment (ACE)</b></h2>      
+                    </section>
                 </div>
+
+                <div class="slider">
+                    <div class="slides">
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <input type="radio" name="radio-btn" id="radio4">
+
+                    <div class="slide first">
+                        <img src="https://github.com/Zerooaa/Web-Dev-Project/blob/main/Images/Slide%201.jpg?raw=true" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="https://github.com/Zerooaa/Web-Dev-Project/blob/main/Images/Slide%202.jpg?raw=true" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="https://github.com/Zerooaa/Web-Dev-Project/blob/main/Images/Slide%203.jpg?raw=true" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="https://github.com/Zerooaa/Web-Dev-Project/blob/main/Images/Slide%204.jpg?raw=true" alt="">
+                    </div>
+
+                    <div class="navigation-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                        <div class="auto-btn4"></div>
+                    </div>
+
+                    </div>
+                    <div class="navigation-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                    <label for="radio4" class="manual-btn"></label>
+                    </div>
+                </div>
+
+                <script type="text/javascript">
+                var counter = 1;
+                setInterval(function(){
+                    document.getElementById('radio' + counter).checked = true;
+                    counter++;
+                    if(counter > 4){
+                    counter = 1;
+                    }
+                }, 5000);
+                </script>            
+                <div class="proceed">
+                    <a href="index0.html" style="-webkit-text-fill-color: white; font-size: 150%;"><b>Click Here to Proceed</b></a>
+                </div>
+                <br>
+                <p class="newtext" style="-webkit-text-fill-color: white;">
+                    By using this service, you understood and agree to the PUP Online Services
+                    <br>
+                    <a class="text-primary" href="https://www.pup.edu.ph/terms">Terms of Use</a>
+                    and 
+                    <a class="text-primary" style="-webkit-text-fill-color: #007bff;" href="https://www.pup.edu.ph/privacy">Privacy Statement</a>
+                </p>
             </div>
         </div>
-        <br>
-    <script>
-        document.getElementById('myForm4').addEventListener('submit', function (event) {
-        event.preventDefault();
-
-        alert('Data has been submitted!');
-        });
-    </script>
-</div>
+    </div>
 </body>
-</html>
