@@ -29,7 +29,7 @@
                 </div>
                 <br>
                 <button id="btnback" type="button" onclick="location.href='index3.html'">Back</button>
-                <form onsubmit=showAlert() class="studentform" name="studForm" target="iframe" method="post" action="https://script.google.com/macros/s/AKfycbxn_r3MQ2USmgh4mvVrr1762Wxuqce7tJj425UsI2Dlj3rv4XkSYxb0FJOQBDl3W1iA/exec">
+                <form class="studentform" name="studForm" target="iframe" method="post" action="https://script.google.com/macros/s/AKfycbxn_r3MQ2USmgh4mvVrr1762Wxuqce7tJj425UsI2Dlj3rv4XkSYxb0FJOQBDl3W1iA/exec">
                     <br>
                     <b>Number of Unit and Hours (Originally Enrolled) </b>
                     <br>
@@ -65,17 +65,40 @@
                     <input type="file" name="inputfile" id="fileinput" class="customfile" name="Signature"required>
                     <br>
                     <br>
-                    <input type="submit">
+                    <input type="submit" onclick="openPopup()">
                 </form>
                 <iframe name="iframe" style="position: absolute; visibility: hidden"></iframe>
             <br>
             </div>
-            <script>
-                function showAlert() {
-                    alert("Form submitted!");
-                }
-            </script>
         </div>
+                <div class="popup" id="popup">
+                    <img src="https://github.com/Zerooaa/Web-Dev-Project/blob/main/Images/pngfind.com-red-check-mark-png-1759778.png?raw=true" height="100" width="50">
+                    <br>
+                    <br>
+                    <br>
+                    <h2>Thank you for your Submission</h2>
+                    <p>This is Acknowledged by the Office of the Branch/Campus Registrar</p>
+                    <br>
+                    <br>
+                    <b>Name: Mark, Patrick</b>
+                    <br>
+                    <b id="currentDate"></b>
+                    <a href="index.html"><button type="button" onclick="closePopup()">OK</button></a>
+                </div>
     </div>
 </body>
+<script>
+    var currentDate = new Date();
+        document.getElementById("currentDate").innerHTML = "Current Date: " + currentDate.toDateString();
+
+    let popup = document.getElementById("popup");
+    
+    function openPopup() {
+        popup.classList.add("open-popup");
+    }
+
+    function closePopup() {
+        popup.classList.remove("open-popup");
+    }
+</script>
 </html>
