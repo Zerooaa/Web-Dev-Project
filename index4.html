@@ -22,10 +22,11 @@
         <div class="backgroundform4">
             <div class="form4">
                 <div class="progress4">
-                    <div id="progressBar4"></div>
+                    <div id="progressBar7"></div>
+                    <div id="progressBar6"></div>
                     <div class="progress-col4">Student Info</div>
                     <div class="progress-col4">Subjects Released & Accepted</div>
-                    <div class="progress-col4">Finalization</div>
+                    <div class="progress-col4" style="color: maroon">Finalization</div>
                 </div>
                 <br>
                 <button id="btnback" type="button" onclick="location.href='index3.html'">Back</button>
@@ -37,17 +38,21 @@
                     <br>
                     <input type="number" id="hoursenrolled" name="Original Number of Units and Hours" required>
                     <br>
+                    <br>
                     <b>Number of Unit and Hours Added: </b>
                     <br>
                     <input type="number" id="unitandhoursadded" name="Number of Units and Hours Added" required>
+                    <br>
                     <br>
                     <b>Total Number of Units and Hours Enrolled:</b>
                     <br>
                     <input type="number" id="totalunitandhoursenrolled" name="Total Number of Units and Hours Enrolled" required>
                     <br>
+                    <br>
                     <b>Student Number: </b>
                     <br>
                     <input type="text" id="studentnumber" name="Student Number" required>
+                    <br>
                     <br>
                     <b>Course, Year & Section: </b>
                     <br>
@@ -77,10 +82,8 @@
                     <br>
                     <br>
                     <h2>Thank you for your Submission</h2>
-                    <p>This is Acknowledged by the Office of the Branch/Campus Registrar</p>
+                    <p>We will be sending an email to you if the form is verified.</p>
                     <br>
-                    <br>
-                    <b>Name: Mark, Patrick</b>
                     <br>
                     <b id="currentDate"></b>
                     <a href="index.html"><button type="button" onclick="closePopup()">OK</button></a>
@@ -88,9 +91,6 @@
     </div>
 </body>
 <script>
-    var currentDate = new Date();
-        document.getElementById("currentDate").innerHTML = "Current Date: " + currentDate.toDateString();
-
     let popup = document.getElementById("popup");
     
     function openPopup() {

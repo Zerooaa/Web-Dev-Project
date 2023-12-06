@@ -33,7 +33,7 @@
 
 .instructions{
     border: 1px solid black;
-    background-color: #A24857;
+    background-color: #882e3d;
     opacity: 0.8;
     border: 1px solid black;
     height: 525px;
@@ -51,7 +51,7 @@
 
 .backgroundform1{
     border: 1px solid black;
-    background-color: #A24857;
+    background-color: #882e3d;
     opacity: 0.8;
     border: 1px solid black;
     height: 1100px;
@@ -192,7 +192,7 @@ textarea:valid~label{
     position: absolute;
     height: 100%;
     width: 350px;
-    background: linear-gradient(to right, maroon, yellow);
+    background: yellow;
     transition: 1s;
 }
 #progressBar1::after{
@@ -275,7 +275,7 @@ textarea:valid~label{
 /* Form 2 */
 .backgroundform2{
     border: 1px solid black;
-    background-color: #A24857;
+    background-color: #882e3d;
     opacity: 0.8;
     border: 1px solid black;
     height: 1200px;
@@ -380,8 +380,15 @@ textarea:valid~label{
 #progressBar2{
     position: absolute;
     height: 100%;
+    width: 350px;
+    background: maroon;
+    transition: 1s;
+}
+#progressBar3{
+    position: absolute;
+    height: 100%;
     width: 700px;
-    background: linear-gradient(to right, maroon, yellow);
+    background: yellow;
     transition: 1s;
 }
 #progressBar2::after{
@@ -437,7 +444,7 @@ textarea:valid~label{
 /* Form 3 */
 .backgroundform3{
     border: 1px solid black;
-    background-color: #A24857;
+    background-color: #882e3d;
     opacity: 0.8;
     border: 1px solid black;
     height: 1200px;
@@ -536,14 +543,21 @@ textarea:valid~label{
     color: white;
     position: relative;
 }
-#progressBar3{
+#progressBar4{
+    position: absolute;
+    height: 100%;
+    width: 350px;
+    background: maroon;
+    transition: 1s;
+}
+#progressBar5{
     position: absolute;
     height: 100%;
     width: 700px;
-    background: linear-gradient(to right, maroon, yellow);
+    background: yellow;
     transition: 1s;
 }
-#progressBar3::after{
+#progressBar4::after{
     height: 0;
     width: 0;
     border-top: 20px solid transparent;
@@ -614,7 +628,7 @@ table, th, td{
 }
 .backgroundform4{
     border: 1px solid black;
-    background-color: #A24857;
+    background-color: #882e3d;
     opacity: 0.8;
     border: 1px solid black;
     height: 900px;
@@ -686,14 +700,21 @@ table, th, td{
     color: white;
     position: relative;
 }
-#progressBar4{
+#progressBar6{
+    position: absolute;
+    height: 100%;
+    width: 700px;
+    background: maroon;
+    transition: 1s;
+}
+#progressBar7{
     position: absolute;
     height: 100%;
     width: 997px;
-    background: linear-gradient(to right, maroon, yellow);
+    background: yellow;
     transition: 1s;
 }
-#progressBar4::after{
+#progressBar6::after{
     height: 0;
     width: 0;
     border-top: 20px solid transparent;
