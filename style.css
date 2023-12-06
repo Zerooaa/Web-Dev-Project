@@ -205,7 +205,7 @@ textarea:valid~label{
     top: 0;
     border-left: 20px solid yellow;
 }
-.form1 button{
+.form1 .buttonslide{
     padding: 10px 0;
     color: rgb(0, 0, 0);
     outline: none;
@@ -216,7 +216,42 @@ textarea:valid~label{
     display: block;
     margin-left: 40%;
     width: 200px;
+
 }
+
+.form1 .buttonslide::before{
+    content: '';
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background-color: maroon;
+
+    transition: transform 300ms ease-in-out;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+.form1 .buttonslide:hover::before,
+.form1 .buttonslide:focus::before {
+    transform: scaleX(1);
+}
+
+.form1 .buttonslide {
+    transition: color 300ms ease-in-out;
+    z-index: 1;
+}
+
+
+.form1 .buttonslide:hover,
+.form1 .buttonslide:focus {
+    color: maroon;
+}
+
 
 .form1 input[type="submit"]{
     padding: 10px 0;
