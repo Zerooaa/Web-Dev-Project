@@ -219,6 +219,7 @@ textarea:valid~label{
     transition: color 0.3s;
     z-index: 1;
     transition: background 0.2s;
+    border-radius: 20px;
 }
 
 .btn1:hover {
@@ -240,6 +241,7 @@ textarea:valid~label{
     overflow: hidden;
     transition: color 0.3s;
     transition: background 0.2s;
+    border-radius: 20px;
 }
 
 .form1 input[type="submit"]:hover {
@@ -404,6 +406,7 @@ textarea:valid~label{
     overflow: hidden;
     transition: color 0.3s;
     transition: background 0.2s;
+    border-radius: 20px;
 }
 
 .form2 input[type="submit"]:hover {
@@ -426,6 +429,7 @@ textarea:valid~label{
     transition: color 0.3s;
     margin-bottom: -1%;
     transition: background 0.2s;
+    border-radius: 20px;
 }
 
 #btnAdd1:hover{
@@ -447,6 +451,7 @@ textarea:valid~label{
     overflow: hidden;
     transition: color 0.3s;
     transition: background 0.2s;
+    border-radius: 20px;
 }
 
 #btnnext:hover{
@@ -462,6 +467,7 @@ textarea:valid~label{
     text-align: center;
     transition: color 0.3s;
     transition: background 0.2s;
+    border-radius: 20px;
 }
 
 #btnback:hover{
@@ -624,6 +630,7 @@ textarea:valid~label{
     overflow: hidden;
     transition: color 0.3s;
     transition: background 0.2s;
+    border-radius: 20px;
 }
 
 .form3 input[type="submit"]:hover {
@@ -646,6 +653,7 @@ textarea:valid~label{
     transition: color 0.3s;
     margin-bottom: -1%;
     transition: background 0.2s;
+    border-radius: 20px;
 }
 
 #btnAdd2:hover{
@@ -813,6 +821,7 @@ table, th, td{
     overflow: hidden;
     transition: color 0.3s;
     transition: background 0.2s;
+    border-radius: 20px;
 }
 
 .form4 input[type="submit"]:hover {
